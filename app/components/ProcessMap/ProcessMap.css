@@ -1,0 +1,95 @@
+.ProcessMap {
+	display:block;
+	clear:both;
+	margin-right: 15px;
+	margin-left: 20px;
+
+	>h2 {
+		font-size:2.2rem;
+		font-weight: normal;
+		span {
+			vertical-align: bottom;
+		}
+		sub {
+			font-size: 1.3rem;
+			margin-left: 1rem;
+			vertical-align: bottom;
+		}
+	}
+
+	>process-bottom {
+		display:block;
+		clear:both;
+		height:20px;
+		border: 1px solid #fff;
+	}
+
+	>process-menu {
+
+		position: relative;
+
+		>refresh {
+			position: absolute;
+			z-index: 10;
+			margin-top: 25px;
+			display:table;
+			width: 98.5%;
+			text-align: center;
+			user-select: none;
+			material-icon {
+				display: inline;
+				font-size: 5rem;
+			}
+		}
+
+		> process-col {
+			display: block;
+			float:left;
+			width: 25%;
+
+			>process-header {
+				border-right: 1px solid #8b8b8b;
+				background-color: var(--active);
+				color: #fff;
+				font-size: 2rem;
+				display: flex;
+				height: 84px;
+				width: 94%;
+				padding: 15px 24px;
+				align-items: center;
+				justify-content: center;
+				position: relative;
+				text-align: center;
+				> process-number {
+					display: block;
+					background-color: var(--dark-active);
+					width: 24px;
+					height: 24px;
+					font-size: 18px;
+					position: absolute;
+					top: 0;
+					left: 0;
+				}
+				> process-title {
+					display: block;
+				}
+			}
+
+			>sub-item {
+				border-top: 1px solid #fff;
+				border-bottom: 1px solid #aeaeae;
+				border-right: 1px solid #8b8b8b;
+				background-color: #e0e0e0;
+				display: block;
+				width: 94%;
+				padding:15px;
+				cursor: pointer;
+
+				&:hover{
+					background-color: #cecece;
+					color: #333333;
+				}
+			}
+		}
+	}
+}

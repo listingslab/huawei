@@ -1,0 +1,23 @@
+.CharterItem {
+	display: flex;
+	flex-direction: column;
+	font-size: 14px;
+
+	> item-input {
+		display: flex;
+		background-color: #fff;
+		min-height: 100px;
+		margin-left: 40px;
+
+		@media print {
+			min-height: auto;
+		}
+
+		> input-editor {
+			flex: 1;
+			margin: 3px;
+			border: 1px dashed #d5d5d5;
+			padding: 5px;
+		}
+	}
+}

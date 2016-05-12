@@ -1,0 +1,331 @@
+id,en,zh-cn
+menu_home,Home,首页
+menu_my_projects,My projects,我的项目
+menu_initiate,Initiate,启动
+menu_introduction,Introduction,介绍
+menu_develop_charter,Develop project charter,制定项目章程
+menu_id_stakeholders,Identify stakeholders,识别干系人
+menu_id_team,Identify project members,识别团队成员
+menu_kickoff,Plan and run kick-off meeting,召集项目开工会
+menu_plan,Plan,计划
+menu_wbs,Develop work breakdown structure,创建工作分解WBS
+menu_estimate,"Estimate resources, duration and cost",估算资源，时间，成本
+menu_dev_project,Develop project schedule,制定进度计划
+menu_dev_risk,Develop risk management plan,制定风险管理计划
+menu_dev_comms,Develop communications plan,制定沟通计划
+menu_dev_quality,Develop quality plan,制定质量管理计划
+menu_exec_mon_control,Execute monitor control,执行监视器控制
+menu_execute,Execute management actions, 执行管理行动
+menu_monitor,Monitor project plan,监控
+menu_control,Control and correct project plan,控制
+menu_manage_changes,Manage change requests, 管理变更请求
+menu_close,Close,关
+menu_acceptance,Project acceptance, 项目验收
+menu_summary,Project summary,项目总结
+home_my_projects,My projects,我的项目
+home_my_projects_tip,See all your projects,
+home_pm_knowledge,Help,
+home_pm_knowledge_tip,Learn how to use PM APP,
+home_pm_collab,Project manager forum,项目经理协作
+home_pm_collab_tip,"Collaborate with other Project Managers using PM APP.
+Leave feedback about PM APP",
+home_feedback,Feedback,反馈
+home_ready,Ready,准备区
+home_ready_guide,Guide,指导
+home_ready_demo,Demo,样例
+home_ready_practice,Practice,练习
+home_new_project,New project,新项目
+home_new_project_tip,Create a new project,
+project_dialog_title,New project,新项目
+project_dialog_placeholder,Enter project name here,输入项目名称
+project_dialog_practice,Practice project,练习项目
+project_dialog_create,Create,建立
+dashboard_started,Updated,入门
+dashboard_tasks,Tasks,任务
+dashboard_deliverables,Deliverables,交付
+dashboard_budget,Budget,预算
+dashboard_riskmanagement,Risk Management,风险管理
+dashboard_changemanagement,Change Management,更换管理层
+dash_trafficlight_title,Project Health,项目健康
+dashboard_pie_done,Done,做
+dashboard_pie_complete,Complete,完成
+dashboard_pie_identified,Identified,确定
+dashboard_pie_assigned,Assigned,分配
+dashboard_pie_open,Open,打开
+dashboard_pie_scheduled,Scheduled,计划
+dashboard_pie_spent,Spent,花费
+dashboard_pie_perday,/day,每天
+dashboard_pie_planned,Planned,计划
+dashboard_pie_actual,Actual,实际
+dashboard_pie_closed,Closed,关闭
+dashboard_pie_moved,Moved,感动
+dashboard_pie_requests,Requests,要求
+dashboard_pie_accepted,Accepted,公认
+dash_process_instructions,Click on any Sub-Process to jump to that work area,
+dash_monitor_project_plan,Monitor Project Plan,监测项目计划
+dash_process_map,Process Map,过程图
+dash_failure_risk,Failure risk,
+dash_action_urgent,Urgent,
+dash_action_required,Required,
+dash_action_none,None,
+dash_action,Action,
+role_core_member,Core Member,核心成员
+role_affiliated_member,Affiliated Member,协助者
+role_manager,Manager,经理
+role_other,Other,其他成员
+role_project_manager,Project manager,项目
+role_sponsor,Sponsor,赞助人
+role_stakeholder,Stakeholder,干系人
+work_area_title,Work Area,工作区
+dpc_business_need,Business need,业务需求
+dpc_business_need_placeholder,Describe the business need,描述业务需求
+dpc_objectives,Objectives,目标
+dpc_objectives_placeholder,Describe your objectives,描述目标
+dpc_deliverables,Deliverables,交付件
+dpc_pre_approach,Preliminary approach,总体策略
+dpc_assumptions,Assumptions,限制与假设
+dpc_milestones,Milestones,里程碑
+deliverable_title,Deliverable,交付件
+deliverable_placeholder,Add your deliverable description,添加交付件描述
+deliverable_qc_title,Quality Criteria,质量标准
+deliverable_qc_placeholder,Describe your quality criteria,描述质量标准
+deliverable_note_title,Note,注解
+deliverable_note_placeholder,Enter any notes about your deliverable,添加对交付件的注解
+deliverable_tasks,Tasks,
+milestone_note_title,Note,注解
+milestone_note_placeholder,Enter any notes about your milestone,添加对里程碑的注解
+milestone_placeholder,Add your milestone description,添加里程碑描述
+glossary_title,Glossary,词汇表
+guide_btn_hint,Hint,暗示
+guide_btn_context,Context,上下文
+guide_btn_background,Background,背景
+guide_work_area, Work Area, 工作区域
+guide_role, Role, 角色
+guide_business_need, Business Need, 业务需求
+guide_objectives, Objectives, 指南的目标
+guide_deliverables, Deliverables, 指南交付
+guide_pre_approach, Preliminary Approach, 前法
+guide_milestones, Milestones, 里程碑
+guide_assumptions, Assumptions & Constraints, 假设
+est_proj_total,Project Total,
+est_budget_cost,Budget,
+est_budget,Budget,
+est_actual,Actual,
+est_und_over,Under (Over),
+est_tasks,Tasks,
+est_activites,Activities,
+est_hr,Human Resources,
+est_or,Other Resources,
+est_summary,Summary,
+est_description,Description,
+est_man_days,Man Days,
+est_day_rate,Day Rate,
+est_sub_total,Sub-total,
+est_units,Units,
+est_unit_cost,Unit Cost,
+est_add_activities,Add activities in WBS to enter budget information,
+sch_duration,Duration,
+sch_start_date,Start Date,
+sch_end_date,End Date,
+sch_total_days,Total Days,
+sch_task_status,Status,
+sch_milestone,Milestone,
+sch_responsible,Responsible,
+sch_actions,Actions,
+sch_add_tasks,Add deliverables and tasks to start scheduling your project,
+sch_select_state,Select state...,
+sch_open,Open,
+sch_pending,Pending,
+sch_closed,Closed,
+sch_tasks,Schedule Tasks,
+tsk_state_open,Open,
+tsk_state_pending,Pending,
+tsk_state_closed,Closed,
+risk_plan,Risk plan,
+risk_area,Area,
+risk_probability,Probablility,
+risk_impact,Impact,
+risk_level,Level,
+risk_response_strategy,Strategy,
+risk_status,Status,
+risk_responsible,Responsible,
+risk_response_plan,Response plan,
+risk_state_scope,Scope,
+risk_state_schedule,Schedule,
+risk_state_cost,Cost,
+risk_state_quality,Quality,
+risk_state_resource,Resource,
+risk_state_other,Other,
+risk_state_low,Low,
+risk_state_medium,Medium,
+risk_state_high,High,
+risk_state_-low,- Low,
+risk_state_-medium,- Medium,
+risk_state_-high,- High,
+risk_state_+low,+ Low,
+risk_state_+medium,+ Medium,
+risk_state_+high,+ High,
+risk_state_+exploit,+ Exploit,
+risk_state_+enhance,+ Enhance,
+risk_state_+share,+ Share,
+risk_state_+accept,+ Accept,
+risk_state_-avoid,- Avoid,
+risk_state_-transfer,- Transfer,
+risk_state_-mitigate,- Mitigate,
+risk_state_-accept,- Accept,
+risk_state_open,Open,
+risk_state_pending,Pending,
+risk_state_closed,Closed,
+ph_process_flow,Process flow,
+ph_sub_flow,Sub process flow,
+confirm_message,Are you sure?,
+confirm_warning,Deleted items cannot be recovered,
+confirm_ok,Ok,
+confirm_cancel,Cancel,
+confirm_message_team,Are you sure you want to remove this member from your project team?,
+confirm_message_deliverable,Are you sure you to delete this Deliverable and its Tasks and Activities in the WBS?,
+confirm_message_milestones,Are you sure you want to delete this milestone from your project?,
+confirm_message_agenda,Are you sure you want to remove this item from your agenda?,
+confirm_message_task,Are you sure you want to delete this Task and its Activities?,
+confirm_message_activity,Are you sure you want to delete this Activity?,
+confirm_message_mandays,Are you sure you want to delete these Human Resources?,
+confirm_message_resource,Are you sure you want to delete this Resource?,
+confirm_message_risk,Are you sure you want to delete this risk and its content?,
+confirm_message_quality,Are you sure you want to delete this issue and its content?,
+confirm_message_control,Are you sure want to delete this deviation and its content?,
+confirm_message_change,Are you sure you want to delete this change request and its content?,
+comms_plan_monitor_update,Plan and monitor update,
+comms_dev_project_charter,Develop project charter,
+comms_dev_wbs,Develop Work breakdown structure (WBS),
+comms_est_resources,"Estimate resources, duration and cost",
+comms_dev_project_schedule,Develop project schedule,
+comms_dev_quality_plan,Develop quality plan,
+comms_dev_control_correct,Control and correct project plan,
+comms_project_register_update,Project register updates,
+comms_identify_stakeholders,Identify stakeholders,
+comms_identify_team,Identify and recruit project team,
+comms_dev_risk_management_plan,Develop risk management plan,
+comms_manage_change_requests,Manage change requests,
+comms_forum_updates,Forum Updates,
+comms_collaboration_forum,Collaboration,
+comms_reminders,Reminders,
+comms_meeting_times,Meetings time/dates,
+comms_deliverable_dates,Deliverable due dates,
+comms_milestone_dates,Milestone due dates,
+comms_monitor_project_plan,Monitor Project Plan,
+comms_reports,Reports,
+comms_projects,Projects,
+comms_project_updates,Project updates,
+comms_meetings,Meetings,
+comms_invitations,Invitations,
+comms_minutes,Minutes,
+comms_info_id,ID:,
+comms_info_mobile,Mobile:,
+comms_info_email,Email:,
+comms_info_role,Role:,
+comms_info_responsible,Responsible for communication,
+comms_info_frequency,Frequency,
+comms_day,Day,
+comms_week,Week,
+member_card_companyid,Huawei ID,
+member_card_name,Name,
+member_card_email,Email,
+member_card_telephone,Telephone,
+member_card_mobile,Mobile,
+member_card_department,Department,
+member_card_skills,Skills,
+member_card_manager,Manager,
+member_select_stakeholders_title,Add stakeholders and sponsors to your project,
+member_select_team_title,Add team members to your project,
+quality_criteria,Quality criteria,
+quality_issue,Quality issue,
+quality_fix,Fix,
+quality_responsible,Responsible,
+quality_approver,Fix approver,
+quality_deliverable,Deliverable,
+quality_date_approved,Date approved,
+quality_date,Date,
+quality_date_fix,Date fixed,
+quality_close_date,Close date,
+quality_close_phase,Close phase – project acceptance,
+mon_progress_milestones, Progress & milestones, 发展历程和重大事件
+mon_deliverables, Deliverables, 交付
+mon_quality, Quality, 质量
+mon_cost, Cost, 成本
+mon_risk, Risk register, 风险登记
+mon_change_register, Change register, 变更登记
+mon_last_monitored, Last monitored, 上次监控
+sum_information,Information,
+sum_project_name,Project name,
+sum_summary_date,Summary date,
+sum_pm,Project manager,
+sum_sponsor,Sponsor,
+sum_prepared_by,Summary prepared by,
+sum_reviewed_by,Summary reviewed by,
+sum_review_analysis,Review and analysis,
+sum_schedule,Schedule,
+sum_start_date,Start date,
+sum_plan_finish_date,Planned finish date,
+sum_act_finish_date,Actual finish date,
+sum_sch_deviation,Schedule deviation analysis,
+sum_cost,Cost,
+sum_planned_cost,Planned cost,
+sum_actual_cost,Actual cost,
+sum_cost_deviation,Cost deviation analysis,
+sum_scope,Scope,
+sum_planned_deliverables,Planned deliverables,
+sum_actual_deliverables,Actual deliverables,
+sum_scope_deviation,Scope deviation analysis,
+sum_lessons_learned,Lessons learned,
+sum_lessons,Lessons,
+chgreq_move_change_charter,Moved into Project Plan,
+chgreq_move_change_wbs,Moved changed to WBS Task,
+chgreq_pending,Pending,
+chgreq_none,None required,
+chgreq_accept,Accept,
+chgreq_pending,Pending,
+chgreq_reject,Reject,
+chgreq_objectives,Objectives,
+chgreq_risk,Risk,
+chgreq_time,Time,
+chgreq_cost,Cost,
+chgreq_scope,Scope,
+chgreq_quality,Quality,
+chgreq_responsible,Responsible,
+chgreq_requester,Requester,
+chgreq_follow_up,Follow up,
+chgreq_reason,Reason,
+chgreq_decision,Decision,
+chgreq_impact,Impact on,
+chgreq_description,Description,
+chgreq_change_request,Change request,
+ctrled_date_time,Date time,
+ctrled_plan,Plan,
+ctrled_status,Status,
+ctrled_responsible,Responsible,
+ctrled_plan_deviation,Plan deviation,
+ctrled_corrective_actions,Corrective actions,
+ctrled_lessons_learned,Lessons learned,
+ctrled_ctrl_plan,Control plan,
+kick_set_datetime,Set meeting date and location,
+kick_set_obj,Set objectives,
+kick_select_att,Select attendees,
+kick_dev_agenda,Develop agenda,
+kick_select,Select,
+wbs_activities,Activites,
+matrix_approves,Approves,
+matrix_responsible,Responsible,
+matrix_informed,Informed,
+matrix_assists,Assists,
+select_user,Select User,
+cms_edit,Edit,编辑
+cms_create,Create,创建
+legend_active,Active,
+legend_complete,Complete,
+projects_created,Created,
+projects_updated,Updated,
+select_box,Select...,
+initiate_introduction_guide,PM App Guide,
+plan_introduction_guide,PM App Guide,
+just_click, Just click on this,
+emc_introduction_guide,Execute Monitor Control,

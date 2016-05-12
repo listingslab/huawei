@@ -1,0 +1,89 @@
+.Projects {
+	display: flex;
+	flex: 1;
+
+	> view- {
+		&gutter {
+			width: 130px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			new-project-button {
+				display: flex;
+				flex-direction: column;
+				text-align: center;
+				align-items: center;
+				font-size: 1.1rem;
+				background-color: #fff;
+				cursor: pointer;
+				padding: 10px;
+				border: 1px #ccc solid;
+				material-icon {
+					margin-bottom: 5px;
+				}
+				width: 100px;
+				height: 70px;
+				user-select: none;
+			}
+
+			> projects-legend {
+				margin-top: 15px;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-around;
+				font-size: 1.2rem;
+				padding: 3px 10px;
+				background-color: #fff;
+				border: 1px solid #ccc;
+				width: 100px;
+				height: 70px;
+				legend- {
+					&active,
+					&complete,
+					&practice {
+						border-left: 12px solid #ccc;
+						padding: 0 5px;
+						line-height: 1.2rem;
+					}
+
+					&active {
+						border-color: var(--active);
+					}
+
+					&complete {
+						border-color: var(--project-complete);
+					}
+
+					&practice {
+						border-color: var(--practice);
+					}
+				}
+			}
+		}
+
+		&content {
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+			align-content: flex-start;
+			justify-content: flex-start;
+
+			> content-center {
+				flex-shrink: 1;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				padding: 0 5px;
+
+				project-fill {
+					width: 236px;
+					display: block;
+					margin: 0 5px 10px 5px;
+				}
+
+			}
+		}
+	}
+
+}

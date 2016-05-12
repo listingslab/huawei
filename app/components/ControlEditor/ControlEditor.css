@@ -1,0 +1,45 @@
+.ControlEditor {
+	display: block;
+
+	> editor-content {
+		font-size: 14px;
+		display: block;
+		background-color: #fff;
+		margin-left: 40px;
+
+		> editor-text {
+			display: block;
+			padding: 10px;
+		}
+
+		> editor-items {
+			padding: 10px;
+			display: flex;
+			flex-wrap: wrap;
+			border-bottom: 1px solid var(--section-border);
+			> editor-item {
+				flex: 1;
+				display: block;
+				padding: 10px 5px;
+				page-break-inside: avoid;
+				> item-value {
+					display: flex;
+					min-width: 120px;
+					height: 36px;
+					align-items: center;
+					> select-box {
+						flex: 1;
+					}
+					@media print {
+						min-width: auto;
+					}
+				}
+			}
+		}
+
+		item-title {
+			display: block;
+			margin: 10px 0;
+		}
+	}
+}

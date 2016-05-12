@@ -1,0 +1,25 @@
+.WBS {
+	display: block;
+	width: 100%;
+
+	> header {
+		display: flex;
+	}
+
+	> deliverable-frame {
+		margin-bottom: 15px;
+	}
+
+	wbs-add {
+		flex: 1;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		margin-bottom: 100px;
+		icon-button {
+			background-color: #fff;
+			width: 40px;
+			height: 40px;
+		}
+	}
+}

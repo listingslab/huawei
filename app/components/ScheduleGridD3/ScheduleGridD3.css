@@ -1,0 +1,79 @@
+.ScheduleGridD3 {
+	flex: 1;
+	display: flex;
+	align-content: stretch;
+	> svg {
+		flex: 1;
+		background-color: #fff;
+
+		rect:global(#header) {
+			fill: var(--active);
+		}
+
+		rect:global(#today) {
+			fill: var(--dark-active);
+			fill-opacity: .3;
+			shape-rendering: crispEdges;
+		}
+
+		g:global(#bars) {
+			rect {
+				fill: var(--task-open);
+				&:global(.closed) {
+					fill: var(--task-closed);
+				}
+				&:global(.pending) {
+					fill: var(--task-pending);
+				}
+			}
+		}
+
+		g:global(#shadows) {
+			rect {
+				fill: rgba(255,255,255,.4);
+			}
+		}
+
+		g:global(#axis-lines) {
+			line {
+				stroke: #eee;
+			}
+
+			text {
+				font-size: 12px;
+				display: none;
+			}
+		}
+
+		g:global(#axis-names) {
+
+			text {
+				font-size: 11px;
+				fill: #fff;
+				transform: rotate(-38deg);
+				cursor: default;
+			}
+		}
+
+		g:global(#brush) {
+			:global(.extent) {
+				height: 40px;
+				fill: #eee;
+				fill-opacity: .25;
+				min-width: 10px;
+				shape-rendering: crispEdges;
+			}
+
+			:global(.background) {
+				width: 100%;
+				height: 40px;
+			}
+
+			:global(.resize) rect {
+				height: 40px;
+				fill: #fff;
+				visibility: visible !important;
+			}
+		}
+	}
+}

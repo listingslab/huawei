@@ -1,0 +1,10 @@
+.FlowChart {
+	display: flex;
+	flex: 1;
+	padding: 10px;
+	align-content: center;
+	justify-content: center;
+	> svg {
+		width: 100%;
+	}
+}

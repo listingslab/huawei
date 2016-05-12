@@ -1,0 +1,61 @@
+.NavigationCard {
+	display: flex;
+	flex-direction: column;
+	background-color: #fff;
+	flex: 1;
+	color: rgb(1, 169, 218);
+	user-select: none;
+	cursor: pointer;
+
+	> card-icon {
+		display: flex;
+		flex: 1;
+		justify-content: center;
+		align-items: flex-end;
+
+		> material-icon {
+			font-size: 80px;
+		}
+	}
+
+	> card-title {
+		height: 120px;
+		display: block;
+		font-size: 2.6rem;
+		text-align: center;
+		overflow: hidden;
+		padding: 10px;
+
+		> main, > sub {
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			transition: transform .3s .3s ease-out, opacity .4s ease-out;
+			opacity: 1;
+		}
+
+		> sub {
+			opacity: 0;
+			font-size: 1.5rem;
+			white-space: pre-line;
+		}
+	}
+
+	&:hover {
+		> card-title {
+			> main, > sub {
+				transform: translateY(-120px);
+			}
+
+			> main {
+				opacity: 0;
+			}
+
+			> sub {
+				opacity: 1;
+			}
+		}
+	}
+
+}

@@ -1,0 +1,59 @@
+.ProjectDialog {
+	display: flex;
+	flex-direction: column;
+	background: #fff;
+	font-size: 12px;
+	flex: 1;
+	min-width: 200px;
+
+	> dialog-input {
+		padding: 15px 10px;
+		> check-button {
+			flex-direction: row;
+			align-items: center;
+			margin-bottom: 10px;
+			> button-icon {
+				margin-right: 5px;
+			}
+		}
+
+		> input[type=text] {
+			display: block;
+			width: 100%;
+			padding: 5px;
+			border: 1px solid var(--active);
+		}
+	}
+
+	> dialog-options {
+		display: flex;
+		flex: 0;
+		padding: 0 10px;
+		> options-item {
+			flex: 1;
+			background: #efefef;
+			margin-right: 1px;
+			display: flex;
+
+			&+options-item {
+				margin: 0;
+			}
+		}
+	}
+
+	> dialog-action {
+		flex: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: var(--active);
+		margin: 5px 10px 10px 10px;
+		color: #fff;
+		font-size: 20px;
+		cursor: pointer;
+		user-select: none;
+		height: 40px;
+
+
+	}
+}

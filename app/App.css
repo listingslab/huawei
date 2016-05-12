@@ -1,0 +1,212 @@
+html { font-size: 62.5%; }
+html, body {
+	height: 100%;
+	margin: 0;
+	background-color: #dfdfdf;
+	background-image: url("/img/background.png");
+	font-family: 'Open Sans';
+}
+
+*, *:before, *:after {
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	backface-visibility: hidden;
+}
+
+* {
+	::-webkit-scrollbar {
+		width: 10px;
+	}
+	::-webkit-scrollbar-button { /* 2 */ }
+	::-webkit-scrollbar-track {
+ 		background-color: rgba(0, 96, 124, .2);
+ 	}
+	::-webkit-scrollbar-track-piece {
+
+	}
+	::-webkit-scrollbar-thumb {
+		background-color: rgba(1, 169, 218, .3);
+	}
+}
+
+button { background: none; border: none; margin: 0; padding: 0; font: inherit; width: auto; cursor: pointer; }
+
+a { color: inherit; text-decoration: inherit; }
+
+th { text-align: left; }
+
+textarea,
+input {
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+}
+
+:global(#pm-app) {
+	height: 100%;
+	> ul, li {
+		list-style-position: inside;
+	}
+}
+
+:global(.glossary) {
+	cursor: pointer;
+	/*color: rgb(1, 169, 218);*/
+	color: red;
+	border-bottom: 1px dashed rgb(1, 169, 218);
+	&:hover{
+		color: var(--dark-active)
+	}
+}
+
+:global(.noprint) {
+	@media print {
+		display: none!important;
+	}
+}
+
+
+.App {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	color: rgb(80,80,80);
+	font-size: 1.4rem;
+
+	> app-header {
+		height: 74px;
+		width: 100%;
+		background-color: #d1d1d1;
+		display: flex;
+	}
+
+	> app-content {
+		overflow-x: hidden;
+		display: flex;
+		flex: 1;
+		background: url(/img/huawei.png) no-repeat 54px calc(100% - 20px);
+		background-size: 50px 50px;
+
+		h3 {
+			font-size: 2rem;
+			font-weight: normal;
+		}
+
+		> content-menu {
+			width: 158px;
+			background: #3f3f3f url(/img/huawei-white.png) no-repeat 54px calc(100% - 20px);
+			background-size: 50px 50px;
+			display: flex;
+			flex-direction: column;
+			position: relative;
+			> menu-copyright {
+				font-size: 10px;
+				position: absolute;
+				bottom: 3px;
+				color: #eee;
+				width: 158px;
+				text-align: center;
+			}
+			> menu-title {
+				display: flex;
+				font-size: 13px;
+				align-items: center;
+				justify-content: center;
+				background-color: #fff;
+				height: 66px;
+				flex: none;
+				color: rgb(1, 169, 218);
+				margin-bottom: 10px;
+				position: relative;
+				user-select: none;
+				cursor: pointer;
+				> material-icon {
+					margin-right: 5px;
+				}
+
+				> title-arrow {
+					color: #fff;
+					position: absolute;
+					bottom: -11px;
+					left: 50%;
+					margin-left: -1em;
+					height: 16px;
+					> material-icon {
+						font-size: 31px;
+						line-height: 16px;
+					}
+				}
+			}
+		}
+
+		> content-frame {
+			flex: 1;
+			overflow-y: overlay;
+			overflow-x: hidden;
+			-ms-overflow-style: -ms-autohiding-scrollbar;
+			padding: 15px;
+			display: flex;
+			&::-webkit-scrollbar-track {
+		 		margin: 15px 0;
+		 	}
+		 	&::-webkit-scrollbar {
+				width: 15px;
+			}
+		}
+
+		> content-drawer {
+			width: 30px;
+			display: flex;
+			flex-direction: column;
+			position: relative;
+			transition: width .3s ease-out;
+			> scaffold-pane {
+				overflow-x: hidden;
+				opacity: 0;
+				transition: opacity .2s ease-out;
+				> pane-content {
+					width: 300px;
+				}
+			}
+
+			&:global(.expanded) {
+				width: 300px;
+				> scaffold-pane {
+					opacity: 1;
+				}
+			}
+
+			> expand-button {
+				width: 30px;
+				height: 40px;
+				position: absolute;
+				top: 15px;
+				right: 0;
+				z-index: 30;
+			}
+		}
+	}
+
+	@media print {
+		font-size: 12pt;
+		color: #000;
+		height: auto;
+
+		app-header {
+			height: auto;
+		}
+
+		app-content > content-menu,
+		app-content > content-drawer,
+		app-header > header > header-home,
+		app-header > header > header-user,
+		app-header > header > header-actions {
+			display: none;
+		}
+
+		app-content > content-frame {
+			padding: 0 20px;
+			overflow-y: visible;
+		}
+	}
+}

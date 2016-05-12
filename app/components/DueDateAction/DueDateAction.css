@@ -1,0 +1,57 @@
+.DueDate {
+	position: relative;
+	margin: 0 4px;
+	&[data-style=light] {
+		color: #fff;
+		input::-webkit-input-placeholder {
+			color: #fff;
+		}
+		material-icon {
+			color: inherit;
+		}
+	}
+
+	@media print {
+		color: #000!important;
+		input::-webkit-input-placeholder {
+			color: #666!important;
+		}
+	}
+
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-weight: bold;
+
+	> date-action {
+		display: flex;
+		align-items: center;
+		> div {
+			display: flex;
+		}
+		> div > input {
+			padding: 0px;
+			border: none;
+			font-size: 12px;
+			font-weight: bold;
+			box-shadow: none;
+			cursor: pointer;
+			background-color: transparent;
+			text-align: center;
+			&:hover,
+			&:focus {
+				box-shadow: none;
+			}
+		}
+	}
+
+	material-icon {
+		vertical-align: middle;
+		font-size: 20px;
+		line-height: 18px;
+		color: rgb(1, 169, 218);
+	}
+
+
+}

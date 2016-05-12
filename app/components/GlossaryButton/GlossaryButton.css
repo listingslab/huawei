@@ -1,0 +1,31 @@
+.GlossaryButtonOn {
+	display: block;
+	float:left;	
+	width:16px;
+	text-align: center;
+	cursor: pointer;
+	&:hover{
+		background: var(--dark-active);
+		color: white
+	}
+}
+
+.GlossaryButtonOff {
+	display: block;
+	float:left;	
+	width:16px;
+	text-align: center;
+	color: #c1c1c1;
+}
+
+.GlossaryButtonAll {
+	display: block;
+	float:left;	
+	width:34px;
+	text-align: center;
+	cursor: pointer;
+	&:hover{
+		background: var(--dark-active);
+		color: white
+	}
+}

@@ -1,0 +1,25 @@
+.CreateButton {
+	display: block;
+	position: relative;
+	top: -2px;
+	float:right;
+	margin-right: 5px;
+
+	> a {
+		color: rgb(1, 169, 218);
+		border-bottom: 1px dashed rgb(1, 169, 218);
+	}
+
+	> a > material-icon {
+		font-size: 18px;
+		margin-left: 2px;
+		display: inline-block;
+
+		@media print {
+			display: none;
+		}
+	}
+	> a:hover{
+		color: var(--dark-active)
+	}
+}

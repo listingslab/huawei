@@ -1,0 +1,77 @@
+.ProcessList {
+	display: block;
+	margin-bottom: 20px;
+	> list-item {
+		display: block;
+		border-bottom: 1px solid var(--section-border);
+		border-left: 3px solid var(--active);
+		header-title {
+			border-right: 1px solid var(--section-border);
+			min-width: 50%;
+			guide-label a {
+				display: flex;
+				label-title {
+					order: 10;
+				}
+				material-icon {
+					margin:2px 5px 0 0;
+				}
+			}
+		}
+
+		&:global(.late) {
+			border-left: 3px solid #CE0A0A;
+
+			header-detail {
+				color: #CE0A0A;
+			}
+		}
+
+		header-actions {
+			min-width: 130px;
+		}
+
+		process-title {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			icon-button:hover {
+				color: var(--active);
+			}
+		}
+
+		process-history {
+			display: block;
+			padding: 5px 10px;
+			history-title,
+			history-value {
+				display: block;
+			}
+		}
+	}
+
+	&:global(.scaffold) {
+		margin: -10px;
+		> list-item:last-of-type {
+			border-bottom: none;
+		}
+		component-header > header-content > header-detail {
+			flex-direction: column;
+			> header-actions {
+				border-right: 1px solid var(--section-border);
+			}
+
+			> header-title {
+				padding: 0 5px;
+			}
+
+			> header-actions > process-history {
+				flex: 1;
+				display: flex;
+				> history-title {
+					margin-right: 0.5rem;
+				}
+			}
+		}
+	}
+}

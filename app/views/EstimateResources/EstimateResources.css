@@ -1,0 +1,91 @@
+.EstimateResources {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	> resource-total {
+		border-bottom: 1px solid #ccc;
+		margin-bottom: 50px;
+		total-detail {
+			background-color: #fff;
+			display: flex;
+			font-size: 1.4rem;
+			detail-item {
+				display: flex;
+				flex-direction: column;
+				flex: 1;
+
+				item-title {
+					border-bottom: 1px solid #ccc;
+				}
+
+				item-cost, item-title {
+					padding: 5px;
+					padding-left: 10px;
+					display: block;
+				}
+
+				item-cost {
+					font-weight: bold;
+				}
+
+				&+detail-item {
+					border-left: 1px solid #ccc;
+				}
+
+
+			}
+		}
+	}
+
+	> resource-tasks {
+		padding-bottom: 50px;
+		display: block;
+		flex: none;
+
+		> task-breakdown {
+			display: block;
+			margin-bottom: 15px;
+			&+task-breakdown {
+
+			}
+
+
+			> breakdown-activities {
+				display: block;
+				margin-left: 40px;
+
+				activity-count {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: 40px;
+					background-color: rgba(0,0,0,0.5);
+				}
+
+				> component-header {
+					border-top: 1px solid var(--section-border);
+					&:global(.blue) {
+						border-top: none;
+					}
+				}
+
+				> breakdown-activity {
+					display: block;
+					&+breakdown-activity {
+						border-top: 1px solid #ccc;
+					}
+
+					> breakdown-resources {
+						display: none;
+						@media print {
+							display: inline;
+						}
+						&:global(.expanded) {
+							display: inline;
+						}
+					}
+				}
+			}
+		}
+	}
+}

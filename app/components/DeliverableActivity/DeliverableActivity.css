@@ -1,0 +1,11 @@
+.DeliverableActivity {
+	margin-left: 40px;
+	margin-bottom: 1px;
+	display: block;
+	> component-header
+	> header-content
+	> header-detail
+	> header-title {
+		padding: 0;
+	}
+}

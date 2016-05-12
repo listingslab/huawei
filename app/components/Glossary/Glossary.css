@@ -1,0 +1,60 @@
+.Glossary {
+	display: flex;
+	flex-direction: column;
+	width:270px;
+	padding:5px;
+	overflow: hidden;
+
+	ul li {
+		list-style:none;
+	}
+	ul li:before {
+		color: var(--active);
+		content:"\2022";
+		padding-right:.25em;
+		font-size:2.0em;
+		position:relative;
+		top:.2em;
+	}
+
+	> glossary-top{
+
+		flex:0;
+
+		> glossary-filter{
+			display:block;
+			margin-bottom: 12px;
+
+			>input {
+				width:260px;
+			}
+		}
+
+		> glossary-picker{
+			padding:5px;
+			background-color: #efefef;
+			height: 50px;
+			display: block;
+
+			> left {
+				display: block;
+				float:left;
+				width:34px;
+			}
+
+			> right {
+				display: block;
+				float:right;
+				width:215px;
+			}
+		}
+	}
+	
+	> glossary-words{
+		margin-top: 10px;
+		display:flex;
+		flex:1;
+		flex-direction: column;
+		overflow: auto;
+	}
+}

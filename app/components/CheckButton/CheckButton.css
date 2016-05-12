@@ -1,0 +1,14 @@
+.CheckButton {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:  center;
+	flex: 1;
+	cursor: pointer;
+	user-select: none;
+
+	&[disabled=true] {
+		pointer-events: none;
+		opacity: 0.5;
+	}
+}

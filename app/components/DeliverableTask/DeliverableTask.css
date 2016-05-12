@@ -1,0 +1,35 @@
+.DeliverableTask {
+	> component-header {
+
+		@media print {
+			border: none;
+		}
+
+		margin-bottom: 1px;
+
+		> header-content > header-detail > header-title {
+			padding: 0;
+		}
+	}
+
+	> task-activities {
+		display: none;
+
+		&:global(.expanded) {
+			display: block;
+		}
+
+		@media print {
+			display: block;
+		}
+
+		> component-header {
+			margin-left: 40px;
+			margin-bottom: 1px;
+		}
+
+		deliverable-activity {
+			background-color: red;
+		}
+	}
+}

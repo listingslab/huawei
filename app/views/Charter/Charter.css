@@ -1,0 +1,33 @@
+.Charter {
+	flex: 1;
+
+	> charter-form {
+		display: block;
+		margin-bottom: 100px;
+
+		> charter-item,
+		> charter-list {
+			margin-bottom: 15px;
+		}
+
+		> charter-list
+		> list-item
+		> list-input
+		> charter-notes {
+			display: block;
+			margin-left: 30px;
+			background-color: #fff;
+			padding: 10px 0;
+			> label {
+				margin: 0 10px;
+				display: block;
+			}
+
+			> charter-input {
+				margin-bottom: 10px;
+			}
+		}
+
+	}
+
+}

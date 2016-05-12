@@ -1,0 +1,87 @@
+.Header {
+	flex: 1;
+	display: flex;
+	background-color: #fff;
+	user-select: none;
+
+	> header- {
+		&home {
+			width: 158px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			flex: none;
+			background-color: #3f3f3f;
+			color: rgb(175, 223, 235);
+			cursor: pointer;
+
+			> home-title {
+				margin: 0 auto;
+				display: flex;
+				align-items: center;
+				material-icon {
+					font-size: 30px;
+					margin-right: 10px;
+				}
+			}
+		}
+
+		&user {
+			flex: 1;
+			border-bottom: 1px solid #ccc;
+		}
+
+		&title {
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			background-color: #fff;
+			text-align: center;
+			font-size: 60px;
+			font-family: 'Dosis';
+			font-weight: 600;
+			color: rgb(1, 169, 218);
+			border-bottom: 1px solid #ccc;
+			cursor: default;
+			white-space: nowrap;
+			margin-left: -158px;
+			header-logo img {
+				width: 40px;
+				height: 40px;
+				margin-left: 20px;
+			}
+			@media print {
+				flex-direction: row;
+			}
+		}
+
+		&actions {
+			display: flex;
+			flex: 1;
+			align-items: flex-end;
+			justify-content: flex-end;
+			border-bottom: 1px solid #ccc;
+
+			material-icon:hover {
+				color: var(--dark-active);
+			}
+		}
+	}
+
+	> print-area page-title {
+		display: block;
+		width: 100%;
+		padding: 15px;
+		font-size: 1.5rem;
+		text-align: center;
+	}
+
+	@media print {
+		flex-direction: column;
+		> header-title {
+			font-size: 50px;
+			margin: 0;
+		}
+	}
+}

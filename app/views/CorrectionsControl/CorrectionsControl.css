@@ -1,0 +1,33 @@
+.CorrectionsControl {
+	display: block;
+	width: 100%;
+
+	> header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		h3 {
+			display: inline-block;
+		}
+	}
+
+	> footer {
+		display: flex;
+		justify-content: flex-end;
+		margin-bottom: 100px;
+		icon-button {
+			background-color: #fff;
+			height: 40px;
+		}
+	}
+
+	> control-area {
+		display: block;
+		control-editor {
+			margin-bottom: 15px;
+		}
+	}
+
+
+}

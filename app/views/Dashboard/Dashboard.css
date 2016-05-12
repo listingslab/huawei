@@ -1,0 +1,93 @@
+.Dashboard {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	padding: 0px 0 0px 0;
+	overflow: overlay;
+
+
+
+	> dashboard- {
+
+		&header {
+			display:block;
+			background-color: #fff;
+			padding-left: 25px;
+			border-left: 8px solid var(--active);
+			&:global(.closed) {
+				border-color: var(--project-complete);
+			}
+			> project-title {
+				display: block;
+				font-size: 27px;
+				font-weight: bold;
+				margin-bottom: 15px;
+			}
+
+			> project-info {
+				display:block;
+				font-size: 12px;
+				margin-bottom: 15px;
+
+			}
+		}
+
+
+
+		&body {
+			background-color: #fff;
+			margin-top: 15px;
+			padding-bottom: 25px;
+
+			> dashboard- {
+
+				&h2 {
+					display:block;
+					clear:both;
+					padding-top: 10px;
+					padding-bottom: 10px;
+
+					> h2 {
+						font-weight: normal;
+						margin:0;
+					}
+				}
+
+				&traffic-light {
+					display:block;
+					float:left;
+					width: 16.5%;
+
+
+				}
+
+				&pie {
+					display:block;
+					float:left;
+					width: 16.5%;
+					height: 240px;
+				}
+
+				&bottom {
+					display:block;
+					clear:both;
+				}
+
+			}
+
+			> process-section {
+				display: block;
+				padding: 0 30px 0 20px;
+				> h2 {
+					font-weight: normal;
+					font-size: 2.4rem;
+					text-transform: uppercase;
+				}
+				> process-list {
+					border: 1px solid var(--section-border);
+					border-width: 1px 1px 0 0;
+				}
+			}
+		}
+	}
+}

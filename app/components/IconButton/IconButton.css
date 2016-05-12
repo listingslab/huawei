@@ -1,0 +1,16 @@
+.IconButton {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-width: 40px;
+	min-height: 40px;
+	cursor: pointer;
+	user-select: none;
+	> material-icon {
+		margin: 0 auto;
+	}
+
+	@media print {
+		display: none;
+	}
+}

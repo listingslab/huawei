@@ -1,0 +1,117 @@
+.TrafficLight {
+	border: 1px solid #eee;
+	display: table;
+	float:left;
+	height:260px;
+	width:16.6%;
+	position: relative;
+
+	&:hover {
+		border: 1px solid #01a9da;
+		traffic-light-legend {
+			display: block;
+		}
+	}
+
+	> expand-button {
+		height:16px;
+		width:16px;
+		float:left;
+	}
+
+	> traffic-light {
+		&-title {
+			display: block;
+			padding:5px;
+			margin-top:5px;
+			height:60px;
+			text-align: center;
+			align-content: center;
+			justify-content: center;
+			font-size: 18px;
+			line-height: 18px;
+			font-weight: bold;
+		}
+
+		&-graphic {
+			display: flex;
+			flex: 1;
+			text-align: center;
+			align-content: center;
+			justify-content: center;
+		}
+
+		&-date {
+
+			display: block;
+			padding:10px;
+			margin-top:15px;
+			text-align: center;
+			align-content: center;
+			justify-content: center;
+			font-size: 13px;
+			line-height: 13px;
+			font-weight: bold;
+
+			>material-icon{
+				margin-top: -5px;
+				float:left;
+			}
+		}
+
+		&-legend {
+			display: none;
+			position: absolute;
+			background-color: #fff;
+			border:1px solid var(--active);
+			font-size: 1.3rem;
+			left: 100%;
+			top: -1px;
+			header {
+				background-color: var(--dark-active);
+				color: #fff;
+				display: flex;
+				text-align: center;
+				label {
+					width: 50%;
+					flex: none;
+					padding: 5px;
+					&+label {
+						border-left: 1px solid var(--section-border);
+					}
+				}
+			}
+
+			table {
+				border-collapse: collapse;
+
+				:global(.red) td{
+					border-color: red;
+				}
+
+				:global(.orange) td{
+					border-color: orange;
+				}
+				:global(.green) td{
+					border-color: green;
+				}
+
+				tr {
+					display: flex;
+				}
+
+				tr td {
+					text-align: center;
+					width: 80px;
+					display: block;
+					border-width: 0 2px 0 0;
+					border-style: solid;
+				}
+
+				td+td {
+					border-width: 0 0 0 2px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,24 @@
+.ManageChanges {
+	display: block;
+	width: 100%;
+
+	header,
+	footer {
+		display: flex;
+		margin-bottom: 15px;
+		align-items: center;
+		justify-content: space-between;
+		h3 {
+			display: inline-block;
+		}
+		icon-button {
+			height: 40px;
+			background-color: #fff;
+		}
+	}
+
+	> footer {
+		justify-content: flex-end;
+		margin-bottom: 100px;
+	}
+}

@@ -1,0 +1,16 @@
+.ExpandButton {
+	display: flex;
+	cursor: pointer;
+	background-color: var(--dark-active);
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	user-select: none;
+	> material-icon {
+		transition: transform .3s ease-out;
+	}
+
+	@media print {
+		display: none;
+	}
+}

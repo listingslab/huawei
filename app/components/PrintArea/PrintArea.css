@@ -1,0 +1,6 @@
+.PrintArea {
+	display: inline;
+	@media screen {
+		display: none!important;
+	}
+}

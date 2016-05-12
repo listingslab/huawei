@@ -1,0 +1,29 @@
+.NotificationButton {
+	display: flex;
+	position: relative;
+	min-width: 40px;
+	min-height: 40px;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+
+	button-badge {
+		top: 4px;
+		right: 4px;
+		display: none;
+		position: absolute;
+		background-color: #CE0A0A;
+		font-size: 8px;
+		line-height: 8px;
+		color: #fff;
+		width: 12px;
+		height: 12px;
+		border-radius: 50%;
+		justify-content: center;
+		align-items: center;
+		-webkit-font-smoothing: subpixel-antialiased;
+		&:global(.show-count) {
+			display: flex;
+		}
+	}
+}

@@ -1,0 +1,11 @@
+.MonitorProcess {
+	display: block;
+	width: 100%;
+	> process-list {
+		margin-left: 37px;
+		margin-bottom: 100px;
+		> list-item {
+			border-left-color: transparent;
+		}
+	}
+}

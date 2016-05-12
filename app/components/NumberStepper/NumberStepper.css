@@ -1,0 +1,17 @@
+.NumberStepper {
+	display: flex;
+	width: 100px;
+
+	stepper-dec,
+	stepper-inc {
+		display: flex;
+	}
+
+	> stepper-value {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex: 1;
+
+	}
+}

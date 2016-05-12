@@ -1,0 +1,61 @@
+.ProjectSummary {
+	display: block;
+	width: 100%;
+	> summary-detail {
+		display: block;
+		margin-bottom: 100px;
+		> detail-information {
+			display: block;
+			margin-bottom: 15px;
+		}
+		section-group,
+		section-list {
+			display: flex;
+			flex-wrap: wrap;
+			margin-left: 40px;
+
+			> section {
+				background-color: #fff;
+				display: block;
+				border-bottom: 1px solid var(--section-border);
+				padding: 10px;
+				min-width: 200px;
+				flex: 1;
+				> section-title,
+				> section-field {
+					display: flex;
+				}
+
+				> section-title {
+					padding: 5px 0;
+				}
+
+				> section-field {
+					min-height: 36px;
+					align-items: center;
+					> select-box {
+						flex: 1;
+					}
+				}
+			}
+		}
+
+		section-list {
+			display: block;
+			margin-left: 40px;
+			> section {
+				margin-left: 40px;
+			}
+
+			> component-header {
+				margin-top: 15px;
+				border-bottom: 1px solid var(--section-border);
+
+				&:first-of-type {
+					margin-top: 0;
+				}
+			}
+		}
+	}
+
+}

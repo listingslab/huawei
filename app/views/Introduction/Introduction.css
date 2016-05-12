@@ -1,0 +1,70 @@
+.Introduction {
+	display: block;
+	flex: 1;
+	flex-direction: column;
+	padding: 0px 0 0px 0;
+
+	> process-header {
+		margin-bottom: 15px;
+	}
+
+	> intro {
+
+		> content {
+
+			margin-bottom: 15px;
+			display: block;
+			background-color: #fff;
+			line-height: 20px;
+			padding: 25px;
+			border-top: 4px solid var(--active);
+			> p a {
+				/*border-bottom: 1px dashed rgb(1, 169, 218);*/
+				&:hover{
+					color: var(--dark-active)
+				}
+			}
+			> p a img a{
+				border: none;
+			}
+			ul li {
+				list-style:none;
+			}
+			ul li:before {
+				color: var(--active);
+				content:"\2022";
+				padding-right:.25em;
+				font-size:2.0em;
+				position:relative;
+				top:.2em;
+			}
+
+			a {
+				/*border-bottom: 1px dashed rgb(1, 169, 218);*/
+				&:hover{
+					color: var(--dark-active)
+				}
+			}
+
+			> h1 {
+				font-size: 2.6rem;
+				line-height: 2.6rem;
+				font-weight: 300;
+
+				> strong {
+					color: rgb(1, 169, 218);
+					font-weight: 500;
+				}
+
+				> a {
+					color: rgb(1, 169, 218);
+					border-bottom: 1px dashed rgb(1, 169, 218);
+
+					&:hover{
+						color: var(--dark-active)
+					}
+				}
+			}
+		}
+	}
+}

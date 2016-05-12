@@ -1,0 +1,45 @@
+.ProcessHeader {
+
+	@media print {
+		display: none;
+	}
+
+	height: 300px;
+	flex: none;
+	display: flex;
+	background-color: #fff;
+	margin-bottom: 5px;
+	border-bottom: 1px solid var(--section-border);
+
+	> header-flow {
+		flex: 1;
+		border-right: 1px solid #dfdfdf;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		> flow-diagram {
+			flex: 1;
+			display: flex;
+			align-content: center;
+		}
+	}
+
+	> header-sub {
+		flex: 1.2;
+		display: flex;
+		flex-direction: column;
+
+		&:global(.close),
+		&:global(.initiate) {
+			img {
+				width: 80%;
+			}
+		}
+
+		> sub-diagram {
+			flex: 1;
+			display: flex;
+			align-content: center;
+		}
+	}
+}

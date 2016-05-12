@@ -1,0 +1,59 @@
+.Schedule {
+	display: block;
+	width: 100%;
+
+	> view-frame {
+		display: flex;
+		align-items: stretch;
+		margin-bottom: 100px;
+
+		> view-tasks {
+			display: flex;
+			flex: 1;
+			min-width: 300px;
+		}
+
+		> view-grid {
+			display: flex;
+			flex: 1.5;
+			overflow-y: hidden;
+			overflow-x: overlay;
+			min-height: 400px;
+		}
+	}
+
+	> view-notice {
+		border: 1px solid var(--section-border);
+		background-color: #fff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 200px;
+	}
+
+	> view-popout {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 50px;
+		width: 200px;
+		left: 50%;
+		bottom: -75px;
+		background-color: rgba(255,255,255,.8);
+		position: fixed;
+		border-radius: 4px;
+		box-shadow: 2px 2px 7px #666;
+		font-size: 1.2rem;
+		text-align: center;
+		transition: bottom .25s;
+
+		label {
+			padding: 5px;
+			display: block;
+		}
+
+		&:global(.show) {
+			bottom: 25px;
+		}
+	}
+}

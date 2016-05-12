@@ -1,0 +1,88 @@
+.CommunicationEditor {
+	display: block;
+	background-color: #fff;
+	margin-bottom: 10px;
+	page-break-after: always;
+	> editor-member {
+		padding: 10px;
+		border-bottom: 1px solid var(--section-border);
+		display: flex;
+		flex-wrap: wrap;
+		member-info {
+			white-space: nowrap;
+			display: flex;
+			padding: 5px;
+			info-title {
+				margin-right: 5px;
+				color: #aaa;
+			}
+			font-size: 14px;
+		}
+	}
+
+	> editor-row {
+		display: flex;
+		padding: 10px;
+		font-size: 14px;
+		border-bottom: 1px solid var(--section-border);
+		align-items: center;
+		> span {
+			width: 50%;
+			display: block;
+		}
+		> select-box {
+			flex: 1;
+		}
+	}
+
+	> editor-options {
+		display: none;
+		background-color: #fff;
+		padding: 10px;
+		flex-wrap: wrap;
+		font-size: 12px;
+		&:global(.expanded) {
+			display: flex;
+		}
+
+		@media print {
+			display: flex;
+		}
+
+		> header {
+			font-size: 14px;
+			width: 100%;
+			flex: none;
+			padding: 10px;
+		}
+
+		> editor-option {
+			margin: 5px;
+			flex: 1;
+			font-size: 12px;
+			display: block;
+			border-radius: 3px;
+			border: 1px solid #ccc;
+			min-width: 180px;
+			label {
+				display: flex;
+				position: relative;
+				input {
+					margin: 4px 10px 0 0;
+					flex: none;
+				}
+			}
+
+			> option-title {
+				display: block;
+				background-color: #ccc;
+				padding: 5px 10px;
+				white-space: nowrap;
+			}
+			> option-item {
+				display: block;
+				padding: 5px 10px;
+			}
+		}
+	}
+}

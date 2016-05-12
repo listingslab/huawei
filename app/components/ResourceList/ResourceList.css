@@ -1,0 +1,53 @@
+.ResourceList {
+	display: block;
+	background: #fff;
+	padding: 0 40px;
+	> list-section {
+		display: block;
+
+		page-break-inside: avoid;
+
+		&+list-section {
+			border-top: 1px solid #ccc;
+		}
+
+		> section-item {
+			display: block;
+			margin-bottom: 20px;
+			padding-right: 40px;
+		}
+
+		>list-summary {
+			font-size: 12px;
+			display: flex;
+			padding-bottom: 20px;
+			> summary-item {
+				flex: 1;
+				border: 1px solid #eee;
+				> item-title {
+					display: flex;
+					height: 30px;
+					padding-left: 10px;
+					align-items: center;
+				}
+				> item-field {
+
+				}
+				input {
+					padding-left: 10px;
+					height: 30px;
+					display: block;
+					width: 100%;
+					border: none;
+					border-top: 1px solid #eee;
+
+					&[disabled] {
+						background-color: #f6f6f6;
+						font-weight: bold;
+					}
+				}
+
+			}
+		}
+	}
+}

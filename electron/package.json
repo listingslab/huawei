@@ -1,0 +1,16 @@
+{
+  "name": "pm-app",
+  "company": "Huawei University",
+  "version": "0.1.0",
+  "main": "main.js",
+  "description": "App server",
+  "dependencies": {
+    "request": "^2.71.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

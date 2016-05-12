@@ -1,0 +1,88 @@
+.Deliverable {
+	margin-bottom: 5px;
+	display: block;
+	&:last-child {
+		padding-bottom: 50px;
+	}
+
+	> deliverable-header {
+		> component-header {
+			border-bottom: 1px solid var(--section-border);
+		}
+
+		header-description {
+			> component-header
+			> header-content
+			> header-detail
+			> header-title {
+				padding: 0;
+			}
+		}
+
+		> component-header > header-content > header-detail {
+			border-bottom: 1px solid #efefef;
+			background-color: var(--active);
+			color: #fff;
+		}
+
+		header-index {
+			width: 40px;
+		}
+
+		@media print {
+			> component-header > header-index,
+			> component-header > header-content >header-detail {
+				height: 40px;
+			}
+
+			header-description {
+				> component-header {
+					border: none;
+				}
+			}
+		}
+	}
+
+	deliverable-description {
+		display: block;
+		background-color: #fff;
+		font-size: 12px;
+		padding: 5px;
+		min-height: 40px;
+	}
+
+	> deliverable-tasks {
+		margin-left: 40px;
+		display: none;
+
+		&:global(.expanded) {
+			display: block;
+		}
+
+		@media print {
+			display: block;
+
+			> component-header {
+				border: none;
+			}
+		}
+
+		> component-header {
+			margin-bottom: 1px;
+		}
+
+		> tasks-activities {
+			margin-left: 40px;
+			display: block;
+
+			> component-header {
+				margin-bottom: 1px;
+			}
+		}
+	}
+
+	.ramActive {
+		color: var(--active);
+	}
+
+}

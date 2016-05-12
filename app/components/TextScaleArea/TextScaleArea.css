@@ -1,0 +1,45 @@
+.TextScaleArea {
+	margin: 3px;
+	border: 1px dashed #ccc;
+	border-radius: 4px;
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	cursor: pointer;
+	min-height: 33px;
+	&:hover {
+		border-color: #aaa;
+	}
+
+	> textarea {
+		flex: 1;
+		overflow: hidden;
+		border: none;
+		background: transparent;
+		resize: none;
+		padding: 4px;
+		cursor: inherit;
+		&:focus {
+			cursor: text;
+		}
+	}
+
+	> printable-text {
+		display: none;
+	}
+
+	@media print {
+		min-height: 0;
+
+		> textarea {
+			display: none;
+		}
+
+		> printable-text {
+			display: block;
+		}
+
+		justify-content: center;
+		border: none;
+	}
+}

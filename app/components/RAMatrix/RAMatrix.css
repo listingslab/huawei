@@ -1,0 +1,70 @@
+.RAM {
+	display: flex;
+	min-height: 200px;
+	width: 100%;
+	background-color: #fff;
+	flex-wrap: wrap;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-width: 0 0 1px 0;
+
+	matrix- {
+		&group {
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			flex: 1;
+			padding: 10px;
+			width: 50%;
+			min-width: 200px;
+			border: 1px solid var(--section-border);
+			border-radius: 4px;
+			margin: 5px;
+
+			& + matrix-group {
+				padding-right: 0;
+			}
+
+			> guide-label {
+				margin: 10px 0 5px 0;
+				width: 100%;
+				font-size: 14px;
+			}
+
+			> select-group {
+				display: flex;
+				margin-bottom: 10px;
+				align-items: center;
+				> select-box {
+					width: 100%;
+				}
+			}
+
+
+			> user-pin {
+				margin: 10px 10px 0  0;
+			}
+
+			> group-add {
+				width: 40px;
+				height: 40px;
+				display: flex;
+				background-color: #fff;
+				margin: 10px 20px 0  0;
+				border: 1px solid var(--section-border);
+			}
+		}
+
+		&group:global(.large) {
+			flex: 2;
+			border: none;
+			flex-wrap: wrap;
+			display: flex;
+			padding-right: 0;
+
+			> guide-label {
+				margin-bottom: 10px;
+			}
+		}
+	}
+}
