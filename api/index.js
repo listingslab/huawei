@@ -8,6 +8,7 @@ let clear =  require('clear');
 let app  = koa();
 let db =  require('./db');
 let content =  require('./content');
+let env = process.env;
 
 app.use(serve(__dirname + '/public'));
 app.use(serve(__dirname + '/build'));
@@ -52,9 +53,13 @@ db.loadDatabase({}, () => {
 		require('./routes/changes')(app);
 		require('./routes/reload-content')(app, content);
 		require('./routes/scheduleDownload.js')(app);
-		app.listen(3000);
-		clear();
-		console.log('~~~~~~~~~~~~~~~~| Listening on port 3000 |~~~~~~~~~~~~~~~~');
+
+		let port = env.NODE_PORT || 3000;
+
+		app.listen(port , env.NODE_IP || 'localhost', function () {
+			clear();
+			console.log('~~~~~~~~~~~~~~~~| PMApp on port ' + port + ' |~~~~~~~~~~~~~~~~');
+		});
 	});
 });
 

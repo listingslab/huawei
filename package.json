@@ -24,8 +24,9 @@
     "flux",
     "webpack"
   ],
-  "main": "app/app.js",
+  "main": "api/index.js",
   "scripts": {
+    "start": "node --harmony api/index.js",
     "setup": "npm install; cd api; npm install; cd ../cms; npm install; cd ../electron; npm install",
     "prebuild": "cleandir ./build",
     "build": "webpack --history-api-fallback",

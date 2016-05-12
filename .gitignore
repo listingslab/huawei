@@ -1,2 +1,7 @@
 _gitignored
 node_modules
+app
+cms
+electron
+templates
+test
