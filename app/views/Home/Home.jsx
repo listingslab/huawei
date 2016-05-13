@@ -45,7 +45,8 @@ export default class Home extends React.Component {
 	}
 
 	handleOpenGuide() {
-		this.ipc.openGuide();
+		// this.ipc.openGuide();
+		window.open(window.PMAPP.guideFileName);
 	}
 
 	render() {

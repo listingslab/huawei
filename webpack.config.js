@@ -3,7 +3,6 @@
 var path = require('path');
 var webpack = require('webpack');
 var pkg = require('./package.json');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
 var node_modules = path.resolve(__dirname, 'node_modules');
 
 var PROD_ENV = process.env.NODE_ENV === 'production';
@@ -74,13 +73,6 @@ module.exports = {
 		}
 	},
 	plugins: [
-		new HtmlWebpackPlugin({
-			title: 'PM APP',
-			template: path.join(__dirname, 'templates', 'index.html'),
-			inject: true,
-			favicon: path.join(__dirname, 'app', 'favicon.ico'),
-			pmappConfig: JSON.stringify(pkg.appconfig)
-		}),
 		new webpack.DefinePlugin({
 			__DEV__: DEV_ENV
 		}),

@@ -17,6 +17,7 @@ export default class Header extends React.Component {
 	}
 
 	handleFileDownload() {
+		// <IconButton onClick={ this.handleFileDownload.bind(this) }>file_download</IconButton>
 		if ( window.location.pathname.match(/schedule/) ) {
 			this.ipc.createXLS(`${appState.serverURL}/schedule/${appState.projectId}`);
 		} else {
@@ -46,7 +47,8 @@ export default class Header extends React.Component {
 	}
 
 	handleOpenGuide() {
-		this.ipc.openGuide();
+		// this.ipc.openGuide();
+		window.open(window.PMAPP.guideFileName);
 	}
 
 	render() {
@@ -72,8 +74,7 @@ export default class Header extends React.Component {
 						<NotificationButton/>
 					</a>
 
-					<IconButton onClick={ this.handleFileDownload.bind(this) }>file_download</IconButton>
-
+					
 					<a href="#glossary=ALL">
 						<IconButton>import_contacts</IconButton>
 					</a>

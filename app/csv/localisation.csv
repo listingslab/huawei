@@ -52,6 +52,7 @@ dashboard_pie_complete,Complete,完成
 dashboard_pie_identified,Identified,确定
 dashboard_pie_assigned,Assigned,分配
 dashboard_pie_open,Open,打开
+dashboard_pie_progress,Progress,
 dashboard_pie_scheduled,Scheduled,计划
 dashboard_pie_spent,Spent,花费
 dashboard_pie_perday,/day,每天

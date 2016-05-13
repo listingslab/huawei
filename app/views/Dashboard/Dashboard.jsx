@@ -87,7 +87,7 @@ export default class Dashboard extends React.Component {
 		d.deliverables_percent_scheduled = Math.floor((d.deliverables_due / d.deliverables_total) * 100) || 0;
 		d.deliverables_percent_open = 100 - Math.floor(d.deliverables_approved / d.deliverables_total * 100) || 0;
 		d.deliverables_caption_scheduled = localise('dashboard_pie_scheduled') + ' ' + d.deliverables_percent_scheduled + '%';
-		d.deliverables_caption_actual = localise('dashboard_pie_open') + ' ' + d.deliverables_percent_open + '%';
+		d.deliverables_caption_actual = localise('dashboard_pie_actual') + ' ' + d.deliverables_percent_open + '%';
 		d.deliverables_percent_done = Math.floor(d.deliverables_approved / d.deliverables_total * 100);
 		d.deliverables_legend = [d.deliverables_caption_actual, d.deliverables_caption_scheduled];
 
@@ -116,12 +116,12 @@ export default class Dashboard extends React.Component {
 			}
 		}
 
-		d.project_days = d.project_end.diff(d.project_start, 'days');
-		d.project_days_elapsed = moment().diff(d.project_start, 'days');
+		d.project_days = d.project_end.diff(d.project_start, 'days') || 1;
+		d.project_days_elapsed = moment().diff(d.project_start, 'days') || 1;
 		d.project_days_elapsed_percent = Math.floor((d.project_days_elapsed / d.project_days) * 100) || 0;
 		d.budget_dailyspend_planned = Math.round( (d.budget_total / d.project_days) * 100 ) / 100;
 		d.budget_dailyspend_actual = Math.round( (d.budget_actual / d.project_days_elapsed) * 100 ) / 100;
-		d.budget_spend_percentage = Math.round(d.budget_dailyspend_planned / d.budget_dailyspend_actual * 100) || 0;
+		d.budget_spend_percentage = Math.round(d.budget_dailyspend_actual / d.budget_dailyspend_planned * 100) || 0;
 		d.budget_caption_planned = `${localise('dashboard_pie_planned')} ¥${numeral(d.budget_dailyspend_planned || 0).format('(0,0.0)')}${localise('dashboard_pie_perday')}`;
 		d.budget_caption_actual = `${localise('dashboard_pie_actual')} ¥${numeral(d.budget_dailyspend_actual || 0).format('(0,0.0)')}${localise('dashboard_pie_perday')}`;
 		d.budget_legend = [d.budget_caption_planned, d.budget_caption_actual];
@@ -161,6 +161,10 @@ export default class Dashboard extends React.Component {
 			}
 		}
 		d.health_changes_accepted_percentage = Math.floor((d.changes_moved / d.changes_accepted) * 100) || 0;
+		if (!isFinite(d.health_changes_accepted_percentage)) {
+			d.health_changes_accepted_percentage = 0;
+		}
+
 		d.health_changes_legend = [
 			localise('dashboard_pie_requests') + ' ' + d.changes_total,
 			localise('dashboard_pie_accepted') + ' ' + d.changes_accepted,
@@ -233,7 +237,7 @@ export default class Dashboard extends React.Component {
 							pieTitle={ localise('dashboard_deliverables') }
 							piePercent={ this.dashboard.deliverables_percent_done }
 							pieLegend={ this.dashboard.deliverables_legend }
-							pieCenter={ localise('dashboard_pie_done') }
+							pieCenter={ localise('dashboard_pie_progress') }
 						/>
 						<PieChart
 							pieId= "pie_budget"
