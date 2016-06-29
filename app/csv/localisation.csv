@@ -23,19 +23,19 @@ menu_close,Close,关
 menu_acceptance,Project acceptance, 项目验收
 menu_summary,Project summary,项目总结
 home_my_projects,My projects,我的项目
-home_my_projects_tip,See all your projects,
-home_pm_knowledge,Help,
-home_pm_knowledge_tip,Learn how to use PM APP,
+home_my_projects_tip,See all your projects,见所有项目
+home_pm_knowledge,Help,帮帮我
+home_pm_knowledge_tip,Learn how to use PM APP,了解如何使用PMAPP
 home_pm_collab,Project manager forum,项目经理协作
 home_pm_collab_tip,"Collaborate with other Project Managers using PM APP.
-Leave feedback about PM APP",
+Leave feedback about PM APP",留下反馈
 home_feedback,Feedback,反馈
 home_ready,Ready,准备区
 home_ready_guide,Guide,指导
 home_ready_demo,Demo,样例
 home_ready_practice,Practice,练习
 home_new_project,New project,新项目
-home_new_project_tip,Create a new project,
+home_new_project_tip,Create a new project,创建一个新项目
 project_dialog_title,New project,新项目
 project_dialog_placeholder,Enter project name here,输入项目名称
 project_dialog_practice,Practice project,练习项目
