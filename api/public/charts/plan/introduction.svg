@@ -1,0 +1,123 @@
+<svg id="Flow_Chart_-_WBS" data-name="Flow Chart - WBS" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="531.34" height="289" viewBox="0 0 531.34 289">
+  <defs>
+    <style>
+      .cls-1, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-9 {
+        fill: #f2f2f2;
+      }
+
+      .cls-1 {
+        filter: url(#filter);
+      }
+
+      .cls-2 {
+        font-size: 13px;
+        fill: #6b6b6b;
+        text-anchor: middle;
+        font-family: "Open Sans";
+      }
+
+      .cls-3 {
+        filter: url(#filter-2);
+      }
+
+      .cls-4 {
+        filter: url(#filter-3);
+      }
+
+      .cls-5 {
+        filter: url(#filter-4);
+      }
+
+      .cls-6 {
+        filter: url(#filter-5);
+      }
+
+      .cls-7 {
+        filter: url(#filter-6);
+      }
+
+      .cls-8 {
+        fill: #01a9da;
+        fill-rule: evenodd;
+      }
+
+      .cls-9 {
+        filter: url(#filter-7);
+      }
+    </style>
+    <filter id="filter" x="264" y="223" width="114" height="66" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dx="0.5" dy="0.866" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="2"/>
+      <feFlood result="flood" flood-opacity="0.26"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+    <filter id="filter-2" x="264" y="159" width="114" height="66" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dx="0.5" dy="0.866" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="2"/>
+      <feFlood result="flood" flood-opacity="0.26"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+    <filter id="filter-3" x="264" y="95" width="114" height="66" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dx="0.5" dy="0.866" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="2"/>
+      <feFlood result="flood" flood-opacity="0.26"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+    <filter id="filter-4" x="405" y="62" width="114" height="66" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dx="0.5" dy="0.866" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="2"/>
+      <feFlood result="flood" flood-opacity="0.26"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+    <filter id="filter-5" x="264" y="0" width="114" height="85" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dx="0.5" dy="0.866" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="2"/>
+      <feFlood result="flood" flood-opacity="0.26"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+    <filter id="filter-6" x="132" y="0" width="114" height="85" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dx="0.5" dy="0.866" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="2"/>
+      <feFlood result="flood" flood-opacity="0.26"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+    <filter id="filter-7" x="0" y="0" width="114" height="85" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dx="0.5" dy="0.866" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="2"/>
+      <feFlood result="flood" flood-opacity="0.26"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect id="bg_copy_5" data-name="bg copy 5" class="cls-1" x="266" y="225" width="107" height="59"/>
+  <text id="Develop_quality_plan" data-name="Develop quality plan" class="cls-2" x="319.519" y="244.198">Develop<tspan x="319.519" dy="15.6">quality</tspan><tspan x="319.519" dy="15.6">plan</tspan></text>
+  <rect id="bg_copy_4" data-name="bg copy 4" class="cls-3" x="266" y="161" width="107" height="59"/>
+  <text id="Develop_communication_plan" data-name="Develop communication plan" class="cls-2" x="319.519" y="181.199">Develop<tspan x="319.519" dy="15.6">communication</tspan><tspan x="319.519" dy="15.6">plan</tspan></text>
+  <rect id="bg_copy_3" data-name="bg copy 3" class="cls-4" x="266" y="97" width="107" height="59"/>
+  <text id="Develop_risk_management_plan" data-name="Develop risk management plan" class="cls-2" x="319.999" y="115">Develop risk<tspan x="319.999" dy="15.6">management</tspan><tspan x="319.999" dy="15.6">plan</tspan></text>
+  <rect id="bg_copy_6" data-name="bg copy 6" class="cls-5" x="407" y="64" width="107" height="59"/>
+  <text id="Project_plan" data-name="Project plan" class="cls-2" x="461.001" y="97">Project plan</text>
+  <rect id="bg_copy_2" data-name="bg copy 2" class="cls-6" x="266" y="2" width="107" height="78"/>
+  <text id="Develop_Project_Schedule" data-name="Develop Project Schedule" class="cls-2" x="319.519" y="28.199">Develop<tspan x="319.519" dy="15.6">Project</tspan><tspan x="319.519" dy="15.6">Schedule</tspan></text>
+  <rect id="bg_copy" data-name="bg copy" class="cls-7" x="134" y="2" width="107" height="78"/>
+  <text id="Estimate_resources_duration_cost" data-name="Estimate resources, duration, cost" class="cls-2" x="187.519" y="28.199">Estimate<tspan x="187.519" dy="15.6">resources,</tspan><tspan x="187.519" dy="15.6">duration, cost</tspan></text>
+  <path id="Shape_127_copy" data-name="Shape 127 copy" class="cls-8" d="M770,178v-1h24v1H770Zm24.329-1.376-0.658.753-8-7,0.658-.753Z" transform="translate(-528 -137)"/>
+  <path id="Shape_128_copy" data-name="Shape 128 copy" class="cls-8" d="M792.671,176.623l0.658,0.753-8,7-0.658-.753Z" transform="translate(-528 -137)"/>
+  <path class="cls-8" d="M638,178v-1h24v1H638Zm24.329-1.376-0.658.753-8-7,0.658-.753Z" transform="translate(-528 -137)"/>
+  <path class="cls-8" d="M660.671,176.623l0.658,0.753-8,7-0.658-.753Z" transform="translate(-528 -137)"/>
+  <rect id="bg" class="cls-9" x="2" y="2" width="107" height="78"/>
+  <text id="Develop_Work_Breakdown_Structure_WBS_" data-name="Develop Work Breakdown Structure (WBS)" class="cls-2" x="56" y="21">Develop Work<tspan x="56" dy="15.6">Breakdown</tspan><tspan x="56" dy="15.6">Structure</tspan><tspan x="56" dy="15.6">(WBS)</tspan></text>
+  <g id="Connecting_lines" data-name="Connecting lines">
+    <path class="cls-8" d="M901,178v-1h17v1H901Zm17,214h-1V178h1m0,213v1H901v-1h17Zm0-64v1H901v-1h17Zm0-64v1H901v-1h17Z" transform="translate(-528 -137)"/>
+    <path id="Shape_127_copy_2" data-name="Shape 127 copy 2" class="cls-8" d="M918,231v-1h17v1H918Zm17.329-1.377-0.658.753-8-7,0.658-.753Z" transform="translate(-528 -137)"/>
+    <path id="Shape_128_copy_2" data-name="Shape 128 copy 2" class="cls-8" d="M933.671,229.623l0.658,0.753-8,7-0.658-.753Z" transform="translate(-528 -137)"/>
+    <path id="Shape_127_copy_3" data-name="Shape 127 copy 3" class="cls-8" d="M1042,231v-1h17v1h-17Zm17.33-1.377-0.66.753-8-7,0.66-.753Z" transform="translate(-528 -137)"/>
+    <path id="Shape_128_copy_3" data-name="Shape 128 copy 3" class="cls-8" d="M1057.67,229.623l0.66,0.753-8,7-0.66-.753Z" transform="translate(-528 -137)"/>
+  </g>
+</svg>

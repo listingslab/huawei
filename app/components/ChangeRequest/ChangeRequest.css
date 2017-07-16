@@ -1,0 +1,65 @@
+.ChangeRequest {
+	display: block;
+	margin-bottom: 15px;
+
+	hidden-fields {
+		display: none;
+	}
+
+	&:global(.expanded) {
+		hidden-fields { display: block; }
+	}
+	@media print {
+		hidden-fields { display: block; }
+	}
+
+	request-detail {
+		display: block;
+		margin-left: 40px;
+		background-color: #fff;
+		font-size: 14px;
+
+		request-field {
+			padding: 10px;
+			display: block;
+			border-bottom: 1px solid var(--section-border);
+			page-break-inside: avoid;
+			> field-group {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: flex-start;
+				label {
+					flex: 1;
+					padding: 5px;
+					border: 1px solid var(--section-border);
+					border-radius: 4px;
+					margin: 5px;
+					user-select: none;
+					white-space: nowrap;
+					min-width: 100px;
+					@media print {
+						border: none;
+						min-width: auto;
+					}
+				}
+			}
+		}
+
+		request-group {
+			display: flex;
+			> request-field {
+				flex: 1;
+			}
+		}
+
+		label {
+			display: block;
+			padding: 5px 0;
+			input {
+				margin-right: 5px;
+			}
+		}
+
+
+	}
+}

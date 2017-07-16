@@ -1,0 +1,8 @@
+.ScaffoldMonitor {
+	display: flex;
+	width: 100%;
+	padding-right: 10px;
+	process-list {
+		flex: 1;
+	}
+}

@@ -1,0 +1,82 @@
+.Home {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	flex: 1;
+	> app-version {
+		font-size: 11px;
+		padding: 10px;
+		position: absolute;
+		bottom: 7px;
+		right: 0;
+		cursor: default;
+		display: block;
+		text-align: right;
+		color: #666;
+		font-weight: bold;
+	}
+
+	> copy-right {
+		font-size: 11px;
+		position: absolute;
+		left: 0;
+		bottom: 7px;
+		padding: 10px;
+		width: 100%;
+		text-align: center;
+		user-select: none;
+		cursor: default;
+	}
+
+	> view-row {
+		display: flex;
+
+		> row-item {
+			display: flex;
+			width: 250px;
+			height: 240px;
+			margin: 1px;
+			border: 1px solid rgba(0,0,0,.1);
+			border-width: 0 1px 1px 0;
+			> a {
+				display: flex;
+			}
+			&:global(.no-title-padding) {
+				card-title {
+					padding: 0;
+				}
+			}
+
+			navigation-card >
+			card-title {
+				align-items: inherit;
+				padding: 5px;
+				navigation-card {
+
+					background-color: var(--active);
+					color: #fff;
+					card-icon > material-icon {
+						font-size: 30px;
+					}
+
+					> card-title {
+						font-size: 1.6rem;
+					}
+
+					&:nth-child(2) {
+						border: 1px solid rgba(0,0,0,.2);
+						border-width: 0 1px;
+					}
+
+					&:hover {
+						background-color: var(--dark-active);
+					}
+				}
+			}
+		}
+	}
+
+
+}

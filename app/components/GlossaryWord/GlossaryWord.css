@@ -1,0 +1,16 @@
+.GlossaryWord {
+	display:block;
+	clear:both;
+
+	> glossary-word {
+		display:block;
+		font-weight: bold;
+		width:250px;
+		border-bottom: 1px solid #7a7a7a;
+	}
+	> glossary-definition {
+		display:block;
+		padding-right: 20px;
+		padding-top: 5px;
+	}
+}

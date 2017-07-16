@@ -1,0 +1,12 @@
+.CharterInput {
+	display: flex;
+	background-color: #fff;
+	min-height: 70px;
+
+	> input-area {
+		flex: 1;
+		margin: 3px;
+		border: 1px dashed #d5d5d5;
+		padding: 5px;
+	}
+}

@@ -1,0 +1,87 @@
+.SelectMembers {
+	display: flex;
+	margin-left: 40px;
+	background-color: #fff;
+	padding: 5px;
+
+	@media print {
+		flex-direction: column;
+		> member-groups {
+			order: 5;
+			margin-left: 20px;
+		}
+	}
+
+	> member-groups {
+		> check-button {
+			flex-direction: row;
+			justify-content: flex-start;
+			font-size: 13px;
+			material-icon {
+				font-size: 20px;
+			}
+
+			&[disabled="true"] {
+				display: none;
+			}
+
+			> button-title > i {
+				display: inline-block;
+				font-size: 8px;
+				color: #000;
+				width: 12px;
+				height: 12px;
+				position: relative;
+				top: -5px;
+				font-style: normal;
+				margin-left: 2px;
+			}
+		}
+
+		@media print {
+			> check-button {
+				display: none;
+				&[checked="true"] {
+					display: flex;
+					color: #ccc;
+					font-size: 11px;
+				}
+				material-icon {
+					display: none;
+				}
+			}
+		}
+	}
+
+	> members-selected {
+		display: flex;
+		padding: 0 10px;
+		flex: 1;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+
+		> selected-member {
+			font-size: 14px;
+			background-color: var(--dark-active);
+			color: #fff;
+			border-radius: 2px;
+			padding: 2px 14px;
+			display: flex;
+			align-items: center;
+			margin: 2px 2px 0 0;
+			height: 30px;
+			cursor: default;
+			@media print {
+				color: #000;
+				font-size: 11px;
+				padding: 0;
+				margin: 0 5px 5px 0;
+				background-color: transparent;
+
+				&::after {
+					content:","
+				}
+			}
+		}
+	}
+}

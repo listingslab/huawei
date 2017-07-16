@@ -1,0 +1,62 @@
+.CharterList {
+	display: block;
+	margin-bottom: 5px;
+	> component-header {
+		@media print {
+			margin-bottom: 10px;
+		}
+	}
+
+	> list-item {
+		margin-left: 40px;
+		display: flex;
+		flex-direction: column;
+
+		> component-header {
+			border-bottom: 1px solid #eee;
+			header-content > header-detail {
+				> header-title {
+					padding: 0;
+				}
+			}
+			@media print {
+				border-width: 0 0 1px 0;
+			}
+		}
+		> list-input {
+			padding: 5px;
+			display: none;
+			flex-direction: column;
+			min-height: 100px;
+			background-color: #fff;
+			font-size: 13px;
+			margin: 0 0 2px 40px;
+
+			&:global(.expanded) {
+				display: flex;
+			}
+
+			> h4 {
+				font-size: 12px;
+				margin: 5px;
+				font-weight: normal;
+			}
+
+			> text-scale-area {
+				min-height: 50px;
+				page-break-after: avoid;
+			}
+
+			@media print {
+				display: flex;
+				> text-scale-area {
+					min-height: 0;
+				}
+
+				> h4 {
+					color: #666;
+				}
+			}
+		}
+	}
+}

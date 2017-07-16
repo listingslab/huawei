@@ -1,0 +1,151 @@
+.ProjectMenu {
+	display: block;
+	user-select: none;
+	padding: 5px;
+	flex: 1;
+	cursor: default;
+	> menu-header {
+		cursor: pointer;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		background-color: #fff;
+		min-height: 40px;
+		border-left: 5px solid rgb(1, 169, 218);
+		color: rgb(1, 169, 218);
+	}
+
+	> menu-item {
+		cursor: pointer;
+		display: block;
+		font-size: 1.3rem;
+		border-left: 1px solid rgb(1, 169, 218);
+		padding: 2.5px 0;
+
+		> item-header {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			text-align: center;
+			min-height: 38px;
+			background-color: #fff;
+			margin-left: 10px;
+			color: rgb(1, 169, 218);
+
+			&:before {
+				content: "";
+				display: block;
+				border: 1px solid rgb(1, 169, 218);
+				border-width: 0 0 1px 1px;
+				position: absolute;
+				top: 0;
+				left: -11px;
+				bottom: 50%;
+				width: 11px;
+			}
+		}
+
+		&:global(.active) {
+			> item-header {
+				background-color: rgb(1, 169, 218);
+				color: #fff;
+				font-weight: bold;
+			}
+		}
+	}
+
+	> menu-item:first-of-type {
+		padding-top: 10px;
+		&:before {
+			bottom: calc(50% - 5px);
+		}
+	}
+
+	> menu-item:last-child {
+		border-color: transparent;
+		position: relative;
+		top: -2px;
+	}
+
+	> menu-item > item-submenu {
+		padding-left: 10px;
+		display: block;
+	}
+
+	> menu-item > item-submenu > submenu-item {
+		display: flex;
+		text-align: center;
+		min-height: 40px;
+		border-left: 1px solid #8b8b8b;
+		font-size: 1.2rem;
+
+
+		> item-header {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			text-align: left;
+			min-height: 30px;
+			margin-left: 10px;
+			padding: 0 5px;
+			color: #eee;
+
+			> header-end {
+				display: none;
+			}
+
+			&:before {
+				content: "";
+				display: block;
+				border: 1px solid #8b8b8b;
+				border-width: 0 0 1px 1px;
+				position: absolute;
+				top: 0;
+				left: -11px;
+				bottom: 50%;
+				width: 11px;
+
+			}
+		}
+
+		&:global(.active) {
+			> item-header {
+				background-color: rgb(1, 169, 218);
+				color: #fff;
+				flex: 1;
+				font-weight: bold;
+				position: relative;
+
+				> header-end {
+					display: block;
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					right: -5px;
+					width: 5px;
+					background-color: var(--active);
+					> img {
+						position: absolute;
+						width: 12px;
+						top: 0;
+						bottom: 0;
+						right: -12px;
+						height: 100%;
+					}
+				}
+			}
+		}
+
+		&:first-child {
+			padding-top: 5px;
+		}
+
+		&:last-child {
+			border-color: transparent;
+		}
+
+	}
+}

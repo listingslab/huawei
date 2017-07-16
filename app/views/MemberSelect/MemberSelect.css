@@ -1,0 +1,35 @@
+.MemberSelect {
+	width: 100%;
+	flex: 1;
+	display: block;
+
+	> h2 {
+		text-align: center;
+	}
+
+	> selected-members {
+		display: flex;
+		width: 100%;
+		justify-content: center;
+		flex-wrap: wrap;
+		margin-bottom: 100px;
+
+		member-card {
+			margin-bottom: 15px;
+		}
+
+		> component-header {
+			width: 100%;
+			flex: none;
+			margin-bottom: 10px;
+		}
+
+		> members-blank {
+			display: flex;
+			width: 100%;
+			max-width: 400px;
+			flex: none;
+			margin: 5px;
+		}
+	}
+}

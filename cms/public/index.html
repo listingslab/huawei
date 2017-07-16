@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./favicon.ico">
+    <title>PM APP CMS</title>
+
+    <link href="libs/alloy-editor/alloy-editor/assets/alloy-editor-ocean-min.css" rel="stylesheet">
+    
+    <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">
+            <img src="img/pmapp_icon.png" class="pull-left" height="25">
+            <div class="pull-left brand-txt" style="color: white;">PM APP CMS</div>
+          </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+
+          <a id="publish" href="#" class="btn btn-primary btn pull-right navbar-btn">Publish</a>
+
+        <form class="navbar-form navbar-right" method="GET" >
+          <div class="input-group">
+            <input type="text" name="search" class="form-control" placeholder="Find...">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+            </span>
+          </div>
+        </form>
+
+         <ul class="nav navbar-nav navbar-right">
+            
+            <li><a href="/" style="color: white;">Home</a></li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" style="color: white;" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">New Item <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="?type=introduction&mode=new">Introduction</a></li>
+                <li><a href="?type=guide&mode=new">Guide</a></li>
+                <li><a href="?type=glossary&mode=new">Glossary</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" style="color: white;" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Filter by Type <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="?type=introduction">Introduction</a></li>
+                <li><a href="?type=guide">Guide</a></li>
+                <li><a href="?type=glossary">Glossary</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" style="color: white;" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Filter by Process <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="?process=initiate">Initiate</a></li>
+                <li><a href="?process=plan">Plan</a></li>
+                <li><a href="?process=emc">emc</a></li>
+                <li><a href="?process=close">close</a></li>
+              </ul>
+            </li>
+
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+       
+        <div class="main">
+        <!--  main content area -->
+
+        <a href="#" id="top-save" class="save_close btn btn-default pull-right">Save &amp; Close</a>
+
+        <div id="screen-title"></div>
+        <div id="alert-message"></div>
+
+          <!--  List Screen -->
+          <div id="list-screen" class="screen">
+            <div class="table-responsive" id="list-table"></div>
+          </div>
+
+          <!--  Intro Screen -->
+          <div id="introduction-screen" class="screen ">
+            
+            <form>
+            
+
+              <div class="row">
+                <div id="group_intro_title" class="col-md-12 form-group has-feedback">
+                  <label for="input_intro_title">Title</label>
+                  <input type="text" class="form-control input-lg" id="input_intro_title" /><span id="group_intro_title_icon" style="margin-right: 15px" class="glyphicon form-control-feedback"></span>
+                </div>
+              </div>
+
+              <div class="row">
+
+                <div class="col-md-6 container">
+                  <div class="form-group">
+                    <label for="editor_en" class="control-label">English</label>
+                      <div class="alloy">
+                        <div id="editor_en"
+                        class="input_editor" 
+                        contenteditable="true" 
+                        data-placeholder="&nbsp;">
+                        </div>
+                        <div style="clear:both;"></div>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 container">
+                  <div class="form-group">
+                    <label for="editor_zh" class="control-label">Chinese</label>
+                      <div class="alloy">
+                        <div id="editor_zh"
+                        class="input_editor" 
+                        contenteditable="true" 
+                        data-placeholder="&nbsp;">
+                        </div>
+                        <div style="clear:both;"></div>
+                      </div>
+                    </div>
+                </div>
+                
+              </div>
+              <div style="clear:both; height: 15px;"></div>
+              <div class="row">
+                
+                <div class="col-md-4 container">
+                  <div id="group_intro_slug" class="form-group has-feedback">
+                    <label for="input_intro_slug">Slug</label>
+                    <input type="text" class="form-control" id="input_intro_slug" />
+                    <span id="group_intro_slug_icon" class="glyphicon form-control-feedback"></span>
+                  </div>
+                </div>
+
+                <div class="col-md-4 container">
+                  <div id="group_intro_preview" class="form-group has-feedback">
+                    <label for="input_intro_preview">Preview Link</label>
+                    <input type="text" class="form-control" id="input_intro_preview" />
+                    
+                  </div>
+                </div>
+
+                <div class="col-md-4 container">
+                  <div id="group_intro_process" class="form-group has-feedback">
+                    <label for="input_intro_process">Process</label>
+                    <select class="form-control" id="input_intro_process">
+                      <option value="">Select</option>
+                      <option value="initiate">Initiate</option>
+                      <option value="plan">Plan</option>
+                      <option value="emc">EMC</option>
+                      <option value="close">Close</option>
+                    </select>
+                  </div>
+                </div>
+
+              </div>
+
+
+              <div class="row container">
+                <div class="form-group has-feedback">
+                  <div class="checkbox">
+                      <label>
+                        <input type="checkbox" id="input_intro_showlink" checked/> 
+                        Show Edit link in App
+                      </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <a href="#" class="save btn btn-primary">Save</a>
+                </div>
+                
+              </div>
+
+            </form>
+
+          </div>
+
+          <!--  Guide Screen -->
+          <div id="guide-screen" class="screen">
+            <form>
+
+            <div class="row">
+                
+                <div id="group_guide_title_en" class="col-md-12 form-group has-feedback">
+                  <label for="input_guide_title_en">English Title</label>
+                  <input type="text" class="form-control input-lg" id="input_guide_title_en" /><span id="group_guide_title_icon" style="margin-right: 15px" class="glyphicon form-control-feedback"></span>
+                </div>
+
+                <div id="group_guide_title_zh" class="col-md-12 form-group has-feedback">
+                  <label for="input_guide_title_zh">Chinese Title</label>
+                  <input type="text" class="form-control input-lg" id="input_guide_title_zh" /><span id="group_guide_title_icon" style="margin-right: 15px" class="glyphicon form-control-feedback"></span>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 container">
+                  <h3>Hint</h3>
+                  <div class="form-group">
+                    <label for="hint_editor_en" class="control-label">English</label>
+                      <div class="alloy">
+                        <div id="hint_editor_en"
+                        class="input_editor" 
+                        contenteditable="true" 
+                        data-placeholder="&nbsp;">
+                        </div>
+                        <div style="clear:both;"></div>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 container">
+                  <h3>&nbsp;</h3>
+                  <div class="form-group">
+                    <label for="hint_editor_zh" class="control-label">Chinese</label>
+                      <div class="alloy">
+                        <div id="hint_editor_zh"
+                        class="input_editor" 
+                        contenteditable="true" 
+                        data-placeholder="&nbsp;">
+                        </div>
+                        <div style="clear:both;"></div>
+                      </div>
+                    </div>
+                </div>
+                
+              </div>
+
+              <div class="row">
+              
+                <div class="col-md-6 container">
+                  <h3>Context</h3>
+                  <div class="form-group">
+                    <label for="context_editor_en" class="control-label">English</label>
+                      <div class="alloy">
+                        <div id="context_editor_en"
+                        class="input_editor" 
+                        contenteditable="true" 
+                        data-placeholder="&nbsp;">
+                        </div>
+                        <div style="clear:both;"></div>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 container">
+                  <h3>&nbsp;</h3>
+                  <div class="form-group">
+                    <label for="context_editor_zh" class="control-label">Chinese</label>
+                      <div class="alloy">
+                        <div id="context_editor_zh"
+                        class="input_editor" 
+                        contenteditable="true" 
+                        data-placeholder="&nbsp;">
+                        </div>
+                        <div style="clear:both;"></div>
+                      </div>
+                    </div>
+                </div>
+                
+              </div>
+
+              <div class="row">
+              
+                <div class="col-md-6 container">
+                  <h3>Background</h3>
+                  <div class="form-group">
+                    <label for="background_editor_en" class="control-label">English</label>
+                      <div class="alloy">
+                        <div id="background_editor_en"
+                        class="input_editor" 
+                        contenteditable="true" 
+                        data-placeholder="&nbsp;">
+                        </div>
+                        <div style="clear:both;"></div>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 container">
+                  <h3>&nbsp;</h3>
+                  <div class="form-group">
+                    <label for="background_editor_zh" class="control-label">Chinese</label>
+                      <div class="alloy">
+                        <div id="background_editor_zh"
+                        class="input_editor" 
+                        contenteditable="true" 
+                        data-placeholder="&nbsp;">
+                        </div>
+                        <div style="clear:both;"></div>
+                      </div>
+                    </div>
+                </div>
+                
+              </div>
+
+
+            <div class="row">
+              <div class="col-md-4 container">
+                <div id="group_guide_slug" class="form-group has-feedback">
+                  <label for="input_guide_slug">Slug</label>
+                  <input type="text" class="form-control" id="input_guide_slug" />
+                  <span id="group_guide_slug_icon" class="glyphicon form-control-feedback"></span>
+                </div>
+              </div>
+
+              <div class="col-md-4 container">
+                <div id="group_guide_process" class="form-group has-feedback">
+                  <label for="input_guide_process">Process</label>
+                  <select class="form-control" id="input_guide_process">
+                    <option value="">Select</option>
+                    <option value="initiate">Initiate</option>
+                    <option value="plan">Plan</option>
+                    <option value="emc">EMC</option>
+                    <option value="close">Close</option>
+                  </select>
+                </div>
+              </div>
+
+            </div>
+
+
+
+            <div class="row container">
+              <div class="form-group has-feedback">
+                <div class="checkbox">
+                    <label>
+                      <input type="checkbox" id="input_guide_showlink" checked/> 
+                      Show Edit link in App
+                    </label>
+                  </div>
+              </div>
+
+              <div class="form-group">
+                  <a href="#" class="save btn btn-primary">Save</a>
+              </div>
+              
+            </div>
+
+            </form>
+          
+
+
+          </div>
+
+          <!--  Glossary Screen -->
+          <div id="glossary-screen" class="screen">
+            <form>
+
+              
+              <div class="row">
+              
+                <div class="col-md-6 container">
+
+                <div id="group_glossary_title_en" class="form-group has-feedback">
+                  <label for="input_glossary_title_en">English Term</label>
+                  <input type="text" class="form-control input-lg" id="input_glossary_title_en" /><span id="group_glossary_title_en_icon" style="margin-right: 15px" class="glyphicon form-control-feedback"></span>
+                </div>
+
+                  <div class="form-group">
+                    <label for="glossary_editor_en" class="control-label">English Definition</label>
+                      <div class="alloy">
+                        <div id="glossary_editor_en"
+                        class="input_editor" 
+                        contenteditable="true" 
+                        data-placeholder="&nbsp;">
+                        </div>
+                        <div style="clear:both;"></div>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 container">
+
+                <div id="group_guide_title_zh" class="form-group has-feedback">
+                  <label for="input_glossary_title_zh">Chinese Term</label>
+                  <input type="text" class="form-control input-lg" id="input_glossary_title_zh" /><span id="group_glossary_title_icon" style="margin-right: 15px" class="glyphicon form-control-feedback"></span>
+                </div>
+
+                  <div class="form-group">
+                    <label for="glossary_editor_zh" class="control-label">Chinese Definition</label>
+                      <div class="alloy">
+                        <div id="glossary_editor_zh"
+                        class="input_editor" 
+                        contenteditable="true" 
+                        data-placeholder="&nbsp;">
+                        </div>
+                        <div style="clear:both;"></div>
+                      </div>
+                    </div>
+                </div>
+                
+              </div>
+
+              <div class="row">
+                <div class="col-md-4 container">
+                  <div id="group_glossary_slug" class="form-group has-feedback">
+                    <label for="input_glossary_slug">Slug</label>
+                    <input type="text" class="form-control" id="input_glossary_slug" />
+                    <span id="group_glossary_slug_icon" class="glyphicon form-control-feedback"></span>
+                  </div>
+                </div>
+              </div>
+
+
+                <div class="row container">
+                    <div class="form-group has-feedback">
+                      <div class="checkbox">
+                          <label>
+                            <input type="checkbox" id="input_glossary_showlink" checked/> 
+                            Show Edit link in App
+                          </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <a href="#" class="save btn btn-primary">Save</a>
+                    </div>
+                </div>
+
+            </form>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+
+
+    <div id="glossarise-modal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Glossarise</h4>
+          </div>
+          <div class="modal-body">
+            <!-- <p>This will attempt to identify all occourances of all Glossary items in all Introduction items. And then turn them into links.</p> -->
+            <div id="glossarise_output"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="publish-confirm" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Publish Content</h4>
+          </div>
+          <div class="modal-body">
+            <p>This will publish all content to the app. Are you sure you want to do that?</p>
+            <p>
+              <a href="#" id="cancel_publish" class="btn btn-warning">Cancel</a>
+              <a href="#" id="do_publish" class="btn btn-primary">Yes, Publish</a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+   <!--  <div class="modal-dialog modal-sm" id="overlay" data-backdrop="static" data-keyboard="false"></div> -->
+
+    <script src="libs/jquery/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="libs/jquery/jquery.min.js"><\/script>')</script>
+    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="libs/moment/moment.min.js"></script>
+    <script src="libs/alloy-editor/alloy-editor/alloy-editor-all-min.js"></script>
+    
+    <script src="js/screens/glossary.js"></script>
+    <script src="js/screens/guide.js"></script>
+    <script src="js/screens/introduction.js"></script>
+    <script src="js/screens/list.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>

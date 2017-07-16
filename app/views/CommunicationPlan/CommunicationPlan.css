@@ -1,0 +1,8 @@
+.CommunicationPlan {
+	display: block;
+	width: 100%;
+	plan-editors {
+		display: block;
+		padding-bottom: 50px;
+	}
+}

@@ -1,0 +1,57 @@
+.ScheduleTasks {
+	display: block;
+	flex: 1;
+	border-right: 1px solid var(--section-border);
+
+	> tasks-header {
+		height: 90px;
+		background-color: #fff;
+		component-header {
+			border-bottom: 1px solid var(--section-border);
+			header-actions {
+				align-items: center;
+				label {
+					line-height: 12px;
+					border-left: 12px solid #ccc;
+					margin-right: 4px;
+					padding: 0 0 0 4px;
+					&:global(.open) {
+						border-color: var(--task-open);
+					}
+					&:global(.pending) {
+						border-color: var(--task-pending);
+					}
+					&:global(.closed) {
+						border-color: var(--task-closed);
+					}
+				}
+			}
+		}
+	}
+
+	> tasks-block {
+		display: block;
+		> component-header {
+			border-bottom: 1px solid var(--section-border);
+			header-detail {
+				font-size: 12px;
+			}
+		}
+
+		> task-item {
+			display: block;
+			margin-left: 40px;
+			border-bottom: 1px solid var(--section-border);
+
+			item-options {
+				background-color: #fff;
+				display: none;
+				border-top: 1px solid var(--section-border);
+				&:global(.expanded) {
+					padding: 10px;
+					display: block;
+				}
+			}
+		}
+	}
+}

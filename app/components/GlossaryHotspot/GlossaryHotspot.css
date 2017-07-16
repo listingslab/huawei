@@ -1,0 +1,11 @@
+.GlossaryHotspot {
+
+	cursor: pointer;
+	color: rgb(1, 169, 218);
+	border-bottom: 1px dashed rgb(1, 169, 218);
+	
+	&:hover{
+		color: var(--dark-active)
+	}
+
+}

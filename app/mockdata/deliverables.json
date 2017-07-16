@@ -1,0 +1,383 @@
+{
+	"items":[
+		{
+			"id": 8137,
+			"description": "Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+			"due": 1449128661926,
+			"tasks": [
+				{
+					"id": 928109,
+					"title": "Task - Duis aute irure dolor in reprehenderit in voluptate velit esse",
+					"days": 9,
+					"personCount": 3,
+					"totalDays": 10,
+					"resources": 33,
+					"cost": 13000,
+					"activities": [
+						{
+							"id": 8198,
+							"description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt",
+							"resources": [
+								{
+									"type": "(hr|or)",
+									"unit": "(string)",
+									"ammount": "(number)",
+									"cost": "(number)"
+								}
+							],
+							"responsibilityMatrix": [
+								{
+									"id": "(int)",
+									"userId": "(int)",
+									"roleId": "(int)"
+								}
+							]
+						}
+					],
+					"responsibilityMatrix": [
+						{
+							"id": "(number)",
+							"userId": "(number)",
+							"roleId": "(number)"
+						}
+					],
+					"resources": [
+						{
+							"id": "(number)",
+							"type": "(hr|or)",
+							"unit": "(string)",
+							"ammount": "(number)",
+							"cost": "(number)"
+						}
+					],
+					"startDate": 1449129152503,
+					"endDate": 1449131152503,
+					"milestoneId": "(number)",
+					"statusId": "(number)"
+				}
+			],
+			"responsibilityMatrix": [
+				{
+					"id": 9128,
+					"userId": "mxe3938",
+					"roleId": 22
+				}
+			],
+			"qualityCriteria": "",
+			"qualityIssue": "",
+			"fixDescription": "",
+			"fixedWhen": 1449128551926,
+			"approved": 1449128581926
+		},
+		{
+			"id": 81017,
+			"description": " consectetur adipisici elit, sed do eiusmod tempor incididunt ut",
+			"due": 1449128661926,
+			"tasks": [
+				{
+					"title": "Task - Duis aute irure dolor in reprehenderit in voluptate velit esse",
+					"days": 9,
+					"personCount": 3,
+					"totalDays": 10,
+					"resources": 33,
+					"cost": 13000,
+					"activities": [
+						{
+							"id": 8298,
+							"description": "Dolor sit amet, consectetur adipisici elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla p",
+							"resources": [
+								{
+									"type": "(hr|or)",
+									"unit": "(string)",
+									"ammount": "(number)",
+									"cost": "(number)"
+								}
+							],
+							"responsibilityMatrix": [
+								{
+									"id": "(int)",
+									"userId": "(int)",
+									"roleId": "(int)"
+								}
+							]
+						},
+						{
+							"id": 81298,
+							"description": "Maboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla p",
+							"resources": [
+								{
+									"type": "(hr|or)",
+									"unit": "(string)",
+									"ammount": "(number)",
+									"cost": "(number)"
+								}
+							],
+							"responsibilityMatrix": [
+								{
+									"id": "(int)",
+									"userId": "(int)",
+									"roleId": "(int)"
+								}
+							]
+						},
+						{
+							"id": 82298,
+							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla p",
+							"resources": [
+								{
+									"type": "(hr|or)",
+									"unit": "(string)",
+									"ammount": "(number)",
+									"cost": "(number)"
+								}
+							],
+							"responsibilityMatrix": [
+								{
+									"id": "(int)",
+									"userId": "(int)",
+									"roleId": "(int)"
+								}
+							]
+						}
+					],
+					"responsibilityMatrix": [
+						{
+							"id": "(number)",
+							"userId": "(number)",
+							"roleId": "(number)"
+						}
+					],
+					"resources": [
+						{
+							"id": "(number)",
+							"type": "(hr|or)",
+							"unit": "(string)",
+							"ammount": "(number)",
+							"cost": "(number)"
+						}
+					],
+					"startDate": 1449129152503,
+					"endDate": 1449131152503,
+					"milestoneId": "(number)",
+					"statusId": "(number)"
+				}
+			],
+			"responsibilityMatrix": [
+				{
+					"id": 9281,
+					"userId": "mxe3938",
+					"roleId": 22
+				}
+			],
+			"qualityCriteria": "",
+			"qualityIssue": "",
+			"fixDescription": "",
+			"fixedWhen": 1449128551926,
+			"approved": 1449128581926
+		},
+		{
+			"id": 81179,
+			"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+			"due": 1449128661926,
+			"tasks": [
+				{
+					"title": "Lorem ipsum dolor sit amet, consectetur adipisici elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+					"days": 9,
+					"personCount": 3,
+					"totalDays": 10,
+					"resources": 33,
+					"cost": 13000,
+					"activities": [
+						{
+							"id": 81198,
+							"description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt",
+							"resources": [
+								{
+									"type": "(hr|or)",
+									"unit": "(string)",
+									"ammount": "(number)",
+									"cost": "(number)"
+								}
+							],
+							"responsibilityMatrix": [
+								{
+									"id": "(int)",
+									"userId": "(int)",
+									"roleId": "(int)"
+								}
+							]
+						}
+					],
+					"responsibilityMatrix": [
+						{
+							"id": "(number)",
+							"userId": "(number)",
+							"roleId": "(number)"
+						}
+					],
+					"resources": [
+						{
+							"id": "(number)",
+							"type": "(hr|or)",
+							"unit": "(string)",
+							"ammount": "(number)",
+							"cost": "(number)"
+						}
+					],
+					"startDate": 1449129152503,
+					"endDate": 1449131152503,
+					"milestoneId": "(number)",
+					"statusId": "(number)"
+				}
+			],
+			"responsibilityMatrix": [
+				{
+					"id": 921838,
+					"userId": "mxe3938",
+					"roleId": 22
+				}
+			],
+			"qualityCriteria": "",
+			"qualityIssue": "",
+			"fixDescription": "",
+			"fixedWhen": 1449128551926,
+			"approved": 1449128581926
+		},
+		{
+			"id": 8119487,
+			"description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+			"due": 1449128661926,
+			"tasks": [
+				{
+					"title": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+					"days": 9,
+					"personCount": 3,
+					"totalDays": 10,
+					"resources": 33,
+					"cost": 13000,
+					"activities": [
+						{
+							"id": 891138,
+							"description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt",
+							"resources": [
+								{
+									"type": "(hr|or)",
+									"unit": "(string)",
+									"ammount": "(number)",
+									"cost": "(number)"
+								}
+							],
+							"responsibilityMatrix": [
+								{
+									"id": "(int)",
+									"userId": "(int)",
+									"roleId": "(int)"
+								}
+							]
+						}
+					],
+					"responsibilityMatrix": [
+						{
+							"id": "(number)",
+							"userId": "(number)",
+							"roleId": "(number)"
+						}
+					],
+					"resources": [
+						{
+							"id": "(number)",
+							"type": "(hr|or)",
+							"unit": "(string)",
+							"ammount": "(number)",
+							"cost": "(number)"
+						}
+					],
+					"startDate": 1449129152503,
+					"endDate": 1449131152503,
+					"milestoneId": "(number)",
+					"statusId": "(number)"
+				}
+			],
+			"responsibilityMatrix": [
+				{
+					"id": 11928,
+					"userId": "mxe3938",
+					"roleId": 22
+				}
+			],
+			"qualityCriteria": "",
+			"qualityIssue": "",
+			"fixDescription": "",
+			"fixedWhen": 1449128551926,
+			"approved": 1449128581926
+		},
+		{
+			"id": 1128117,
+			"description": "Adipisici elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+			"due": 1449128661926,
+			"tasks": [
+				{
+					"title": "Task - Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+					"days": 9,
+					"personCount": 3,
+					"totalDays": 10,
+					"resources": 33,
+					"cost": 13000,
+					"activities": [
+						{
+							"id": 12898,
+							"description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt",
+							"resources": [
+								{
+									"type": "(hr|or)",
+									"unit": "(string)",
+									"ammount": "(number)",
+									"cost": "(number)"
+								}
+							],
+							"responsibilityMatrix": [
+								{
+									"id": "(int)",
+									"userId": "(int)",
+									"roleId": "(int)"
+								}
+							]
+						}
+					],
+					"responsibilityMatrix": [
+						{
+							"id": "(number)",
+							"userId": "(number)",
+							"roleId": "(number)"
+						}
+					],
+					"resources": [
+						{
+							"id": "(number)",
+							"type": "(hr|or)",
+							"unit": "(string)",
+							"ammount": "(number)",
+							"cost": "(number)"
+						}
+					],
+					"startDate": 1449129152503,
+					"endDate": 1449131152503,
+					"milestoneId": "(number)",
+					"statusId": "(number)"
+				}
+			],
+			"responsibilityMatrix": [
+				{
+					"id": 13928,
+					"userId": "mxe3938",
+					"roleId": 22
+				}
+			],
+			"qualityCriteria": "",
+			"qualityIssue": "",
+			"fixDescription": "",
+			"fixedWhen": 1449128551926,
+			"approved": 1449128581926
+		}
+	]
+}

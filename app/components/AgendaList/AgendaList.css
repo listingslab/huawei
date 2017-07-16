@@ -1,0 +1,58 @@
+.AgendaList {
+	display: block;
+	> component-header {
+		> header-content > header-detail {
+			background-color: var(--active);
+		}
+	}
+
+	> list-total {
+		display: flex;
+		margin-left: 40px;
+		height: 40px;
+		background-color: #fff;
+		align-content: flex-end;
+		font-size: 13px;
+
+		> total-description {
+			flex: 1;
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+		}
+
+		> total-duration {
+			width: 100px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-weight: bold;
+		}
+	}
+
+	> list-item {
+		display: block;
+		margin-left: 40px;
+		delete-button {
+			color: #fff;
+			background-color: rgb(80, 80, 80);
+			opacity: 0.8;
+			&:hover {
+				opacity: 1;
+			}
+		}
+		> component-header {
+			> header-content > header-detail {
+				> header-title {
+					padding: 0;
+				}
+			}
+
+			@media print {
+				border-width: 0 0 1px 0;
+			}
+		}
+	}
+
+
+}

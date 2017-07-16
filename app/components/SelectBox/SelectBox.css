@@ -1,0 +1,30 @@
+.SelectBox {
+	> :global(.Select) {
+
+		:global(.Select-placeholder) {
+			padding-right: 45px;
+		}
+
+		@media print {
+			display: inline;
+			:global(.Select-control) {
+				display: inline-block;
+				height: auto;
+				border: none;
+				span {
+					display: none;
+				}
+
+				:global(.Select-placeholder) {
+					position: static;
+					height: auto;
+					padding: 0;
+					line-height: normal;
+				}
+			}
+			:global(.Select-input) {
+				display: none!important;
+			}
+		}
+	}
+}

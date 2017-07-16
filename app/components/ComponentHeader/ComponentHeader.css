@@ -1,0 +1,72 @@
+.ComponentHeader {
+	display: flex;
+	min-height: 40px;
+
+	page-break-after: avoid;
+
+	@media print {
+		min-height: 0;
+		border: none!important;
+	}
+
+	> header-index {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 40px;
+		text-align: center;
+		background-color: rgb(0, 96, 124);
+		color: #fff;
+		font-size: 1.3rem;
+
+		@media print {
+			color: #333;
+			background-color: transparent;
+		}
+	}
+
+	> header-content {
+		display: block;
+		flex: 1;
+		background-color: #fff;
+
+		> header-detail {
+			display: flex;
+			font-size: 1.3rem;
+			min-height: 40px;
+			background-color: #fff;
+			flex: 1;
+			header-title {
+				padding: 5px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				flex: 1;
+				font-size: 1.5rem;
+			}
+
+			@media print {
+				color: #333!important;
+				background-color: transparent!important;
+			}
+
+			header-actions {
+				display: flex;
+
+			}
+
+			@media print {
+				min-height: 0;
+			}
+		}
+	}
+
+	&:global(.blue) {
+		> header-content {
+			> header-detail {
+				background-color: var(--active);
+				color: #fff;
+			}
+		}
+	}
+}

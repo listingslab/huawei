@@ -1,0 +1,109 @@
+{
+	"initiate": {
+		"title": "menu_initiate",
+		"route": "initiate/",
+		"items": [
+			{
+				"title": "menu_introduction",
+				"route": "initiate/introduction"
+			},
+			{
+				"title": "menu_id_stakeholders",
+				"route": "initiate/stakeholders"
+			},
+			{
+				"title": "menu_develop_charter",
+				"route": "initiate/charter"
+			},
+			{
+				"title": "menu_id_team",
+				"route": "initiate/team"
+			},
+			{
+				"title": "menu_kickoff",
+				"route": "initiate/kick-off"
+			}
+		]
+	},
+
+	"plan": {
+		"title": "menu_plan",
+		"route": "plan/",
+		"items": [
+			{
+				"title": "menu_introduction",
+				"route": "plan/introduction"
+			},
+			{
+				"title": "menu_wbs",
+				"route": "plan/wbs"
+			},
+			{
+				"title": "menu_estimate",
+				"route": "plan/estimate"
+			},
+			{
+				"title": "menu_dev_project",
+				"route": "plan/schedule"
+			},
+			{
+				"title": "menu_dev_risk",
+				"route": "plan/risk"
+			},
+			{
+				"title": "menu_dev_comms",
+				"route": "plan/communications"
+			},
+			{
+				"title": "menu_dev_quality",
+				"route": "plan/quality"
+			}
+		]
+	},
+
+	"emc": {
+		"title": "menu_exec_mon_control",
+		"route": "emc/",
+		"items": [
+			{
+				"title": "menu_introduction",
+				"route": "emc/introduction"
+			},
+			{
+				"title": "menu_execute",
+				"route": "emc/execute"
+			},
+			{
+				"title": "menu_monitor",
+				"route": "emc/monitor"
+			},
+			{
+				"title": "menu_control",
+				"route": "emc/control"
+			},
+			{
+				"title": "menu_manage_changes",
+				"route": "emc/manage"
+			}
+		]
+	},
+
+	"close": {
+		"title": "menu_close",
+		"route": "close/",
+		"items": [
+			{
+				"title": "menu_introduction",
+				"route": "close/introduction"
+			},
+			{
+				"title": "menu_acceptance",
+				"route": "close/acceptance"
+			},
+			{
+				"title": "menu_summary",
+				"route": "close/summary"
+			}
+		]
+	}
+}

@@ -1,0 +1,72 @@
+.ScheduleGrid {
+	flex: 1;
+	display: flex;
+	background-color: #fff;
+
+
+
+	> grid-block {
+		display: flex;
+		flex-direction: column;
+		transition: width .25s;
+		width: 300px;
+
+		&+grid-block {
+			outline-left: 1px solid green;
+		}
+
+		block-month {
+			display: flex;
+			height: 40px;
+			flex-direction: column;
+			justify-content: center;
+			padding: 10px;
+			background-color: var(--dark-active);
+
+		}
+
+		> block-header {
+			height: 40px;
+			background-color: var(--active);
+			color: #fff;
+		}
+
+		> block-columns {
+			display: flex;
+			flex: 1;
+			> block-column {
+				display: block;
+				flex: 1;
+				> column-title {
+					white-space: nowrap;
+					height: 50px;
+					display: block;
+					position: relative;
+					span {
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						width: 100px;
+						margin: -7px 0 0 -50px;
+						transform: rotate(-45deg);
+						font-size: 12px;
+						line-height: 14px;
+						height: 14px;
+						display: inline-block;
+						text-align: center;
+
+					}
+				}
+
+				> column-cell {
+					display: block;
+					height: 40px;
+					box-shadow: inset 0px 0px 1px #ccc;
+					flex: 1;
+					width: 100%;
+				}
+			}
+
+		}
+	}
+}

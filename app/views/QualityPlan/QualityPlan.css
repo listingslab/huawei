@@ -1,0 +1,34 @@
+.QualityPlan {
+	display: block;
+	width: 100%;
+
+	> header {
+		h3 {
+			display: inline-block;
+		}
+	}
+
+	> plan-area {
+		display: block;
+		margin-bottom: 100px;
+		> plan-acceptance {
+			display: block;
+			width: 50%;
+			min-width: 350px;
+			font-size: 14px;
+			> accpetance-content {
+				margin-left: 40px;
+				display: block;
+				background-color: #fff;
+				padding: 10px;
+
+				> accpetance-title {
+					display: flex;
+					justify-content: space-between;
+					margin-bottom: 5px;
+				}
+			}
+		}
+
+	}
+}

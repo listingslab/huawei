@@ -1,0 +1,58 @@
+.RiskDescription {
+	display: block;
+
+	description-details {
+		margin-left: 40px;
+		display: flex;
+		flex-wrap: wrap;
+		background-color: #fff;
+		height: 0;
+		overflow: hidden;
+
+		&:global(.expanded) {
+			height: auto;
+			overflow: visible;
+		}
+
+		@media print {
+			height: auto;
+			overflow: visible;
+		}
+
+
+		detail-item {
+			padding: 15px;
+			width: 200px;
+			font-size: 13px;
+			guide-label {
+				margin-bottom: 10px;
+			}
+			select {
+				width: 100%;
+				display: block;
+			}
+
+			@media print {
+				width: auto;
+				flex: 1;
+				padding: 0;
+				margin: 0 5px;
+				guide-label {
+					border-bottom: 1px solid var(--section-border);
+				}
+			}
+		}
+
+		detail-section {
+			width: 100%;
+			text-scale-area {
+				min-height: 100px;
+			}
+		}
+	}
+
+	text-scale-area {
+		min-height: 40px;
+		font-size: 13px;
+	}
+}

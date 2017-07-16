@@ -1,0 +1,15 @@
+.LinkButton {
+	display: inline-block;
+	background-color: var(--active);
+	color: #fff;
+	padding: 5px 10px;
+	border-radius: 5px;
+	font-size: 14px;
+	box-shadow: 1px 1px 0px var(--dark-active);
+	cursor: pointer;
+	material-icon {
+		margin-right: 4px;
+		display: inline-block;
+		vertical-align: middle;
+	}
+}

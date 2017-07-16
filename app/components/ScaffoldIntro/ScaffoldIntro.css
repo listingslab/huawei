@@ -1,0 +1,48 @@
+.IntroScaffold {
+	overflow-y: auto;
+	margin: -10px 0;
+	padding-right: 10px;
+}
+
+.ScaffoldIntro {
+	display:block;
+	flex: 1;
+	flex-direction: column;
+	ul li {
+		list-style:none;
+	}
+
+	ul li:before {
+		color: var(--active);
+		content:"\2022";
+		padding-right:.25em;
+		font-size:2.0em;
+		position:relative;
+		top:.2em;
+	}
+
+	> ul, ol {
+		padding:15px;
+	}
+
+	> h1 {
+			font-size: 2.0rem;
+			line-height: 2.0rem;
+			font-weight: 300;
+			color: rgb(80,80,80);
+
+			> strong {
+				color: rgb(1, 169, 218);
+				font-weight: 500;
+			}
+
+			> a {
+				color: rgb(1, 169, 218);
+				border-bottom: 1px dashed rgb(1, 169, 218);
+
+				&:hover{
+					color: var(--dark-active)
+				}
+			}
+		}
+}

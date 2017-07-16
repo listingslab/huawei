@@ -1,0 +1,32 @@
+.RiskManagement {
+	width: 100%;
+	display: block;
+	> footer,
+	> header {
+		display: flex;
+
+		add-item {
+			flex: 1;
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+
+			icon-button {
+				background-color: #fff;
+				margin: 10px 0;
+			}
+		}
+	}
+
+	> footer {
+		margin-bottom: 150px;
+	}
+
+	management-items {
+		display: block;
+		risk-description {
+			margin-bottom: 15px;
+		}
+
+	}
+}

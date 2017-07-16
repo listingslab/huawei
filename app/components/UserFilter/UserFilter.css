@@ -1,0 +1,36 @@
+.UserFilter {
+	> input {
+		padding: 5px;
+		font-size: 14px;
+		border-radius: 3px;
+		border: 1px solid var(--active);
+	}
+
+	> filter-results {
+		display: flex;
+		flex-direction: column;
+		height: 150px;
+		overflow-y: auto;
+		> result-item {
+			display: flex;
+			font-size: 14px;
+			border-bottom: 1px solid #ccc;
+			padding: 5px;
+			cursor: pointer;
+			height: 40px;
+			flex: none;
+
+			&:global(.selected) {
+				color: var(--active);
+			}
+
+			&:hover {
+				color: var(--dark-active);
+			}
+
+			&:last-of-type {
+				border: none;
+			}
+		}
+	}
+}
