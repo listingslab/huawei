@@ -1,0 +1,20 @@
+/**
+ * Created by Chris Dorward on 27/01/2017
+ * coponents/Footer/Footer.scss
+ */
+
+@import '../../vars.scss';
+
+.footer {
+  color: $hlb-text;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.footer .start-again {
+  color: $hlb-links;
+}
+
+.footer .start-again:hover {
+  color: $hlb-links-hover;
+}

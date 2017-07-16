@@ -1,0 +1,33 @@
+/**
+ * Created by Chris Dorward on 23/01/2017
+ * coponents/Hero/Hero
+ */
+
+@import '../../vars.scss';
+
+.hero {
+  background: $hlb-blue;
+  border: none;
+  color: $hlb-white;
+}
+
+.hero h2 {
+  font-family: 'Baloo';
+}
+
+.hero-btn-blue {
+  background: $hlb-blue;
+  border: none;
+  color: $hlb-white;
+}
+
+.hero-btn-blue:hover {
+  background: $hlb-white;
+  color: $hlb-black;
+}
+
+.hero-btn {
+  width: 100%;
+  text-align: left;
+  font-family: 'Baloo';
+}

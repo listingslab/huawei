@@ -1,0 +1,149 @@
+/**
+ * Created by Amy on 02/02/2017
+ * coponents/CardTipCat/CardTipCat
+ */
+
+@import '../../vars.scss';
+
+.card-category {
+  margin: 0;
+  position: relative;
+
+  /* x-offset, bottom-offset, spread, size */
+  box-shadow: 0 8px 25px 2px #a8a094;
+  overflow: hidden;
+  margin-bottom: 30px;
+  height: 300px;
+}
+
+.card-category h2 {
+  font-size: 26px;
+  color: white;
+}
+
+.card-color-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.card-color-overlay-green {
+  background: $hlb-green-trans;
+}
+
+.card-color-overlay-orange {
+  background: $hlb-orange-trans;
+}
+
+.card-color-overlay-blue {
+  background: $hlb-blue-trans;
+}
+
+.card-color-overlay-purple {
+  background: $hlb-purple-trans;
+}
+
+.card-center-overlay-text {
+  position: absolute;
+  width: 70%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  padding: 30px;
+  box-shadow: 0 0 10px 1px #535454;
+}
+
+.card-color-overlay-text-green {
+  background: $hlb-green;
+}
+
+.card-color-overlay-text-blue {
+  background: $hlb-blue;
+}
+
+.card-color-overlay-text-orange {
+  background: $hlb-orange;
+}
+
+.card-color-overlay-text-purple {
+  background: $hlb-purple;
+}
+
+.recipe-center-overlay {
+  position: absolute;
+  width: 40%;
+  height: 25px;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: #fff;
+  z-index: 98;
+  padding-bottom: 2px;
+  padding-top: 2px;
+}
+
+.recipe-center-overlay p {
+  color: #6b6b6b;
+  text-align: center;
+  z-index: 99;
+}
+
+.card-color-overlay::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 3px solid #fff;
+  margin: 35px;
+}
+
+.card-category-image {
+  margin-left: -15px;
+  margin-right: -15px;
+  max-width: none;
+}
+
+/* ==========  Media Queries for responsiveness  ========== */
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  .card-category {
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .card-category {
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .card-category {
+    margin-bottom: 20px;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+ .card-center-overlay-text {
+  }
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .card-category {
+  }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  .card-category {
+  }
+}

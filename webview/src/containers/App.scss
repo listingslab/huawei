@@ -1,0 +1,255 @@
+/**
+ * Created by Chris Dorward on 31/01/2017
+ * containers/App.scss
+ */
+@import '../vars.scss';
+
+html, body {
+  height: 100%;
+}
+
+html, body, #root {
+  font-family: 'Arial';
+  font-size: 16px;
+  line-height: 26px;
+  background: $hlb-background;
+  color: $hlb-text;
+}
+
+.hlb-button {
+  font-family: 'Baloo';
+  font-size: 18px;
+  color: $hlb-white;
+  text-transform: uppercase;
+  background: $hlb-orange;
+  padding: 8px 16px;
+  margin: 16px;
+  letter-spacing: 0.4px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.hlb-button:hover {
+  color: $hlb-black;
+}
+
+.healthy-lunch-box-bg {
+  background: $hlb-yellow;
+}
+
+.breadcrumb-this-page {
+  color: $hlb-blue;
+  font-family: 'Baloo';
+}
+
+p a {
+  color: $hlb-blue;
+}
+
+p a:hover {
+  color: $hlb-green;
+}
+
+.clear-both {
+  clear: both;
+}
+
+.yellow-line {
+  border-bottom: 2px solid $hlb-yellow;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.item-icons {
+  margin-bottom: 15px;
+
+  .item-icon {
+    float: left;
+    margin-right: 10px;
+
+    img {
+      float: left;
+      margin-right: 10px;
+    }
+
+    p {
+      float: left;
+      margin-top: 4px;
+    }
+  }
+}
+
+.item-content-pad{
+  padding-top: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.item-content-ingredients {
+    padding-top: 20px;
+}
+
+.home-featured-recipes {
+  background: $hlb-white;
+  padding: 30px;
+  padding-bottom: 10px;
+  margin: 20px;
+  margin-bottom: 10px;
+  margin-top: -20px;
+}
+
+.home-bottom {
+  padding: 30px;
+  margin: 20px;
+  margin-top: -20px;
+}
+
+.hidden-menu {
+  position: absolute;
+  width: 250px;
+  text-align: left;
+}
+
+.hidden-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hidden-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.hidden-menu ul .hidden-menu li {
+  display: inline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Baloo';
+  color: $hlb-blue-dark;
+}
+
+h1 {
+  font-size: 40px;
+  color: $hlb-titles;
+}
+
+h2 {
+  font-size: 36px;
+  color: $hlb-titles;
+}
+
+h3 {
+  font-size: 24px;
+  color: $hlb-titles;
+}
+
+h4 {
+  font-size: 18px;
+  color: $hlb-titles;
+}
+
+h5 {
+  font-size: 16px;
+  color: $hlb-titles;
+}
+
+h6 {
+  font-size: 14px;
+  color: $hlb-titles;
+}
+
+a, a:hover, a:visited, a:active a:link {
+  text-decoration: none;
+}
+
+table tr td {
+  padding: 15px;
+}
+
+.proximity-btns {
+  margin: 5px;
+}
+
+.context-buttons {
+  margin: 5px;
+  margin-right: 50px;
+  font-family: 'Baloo';
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.context-buttons:hover {
+  text-decoration: none;
+}
+
+.container_xxx {
+  background: white;
+  border: 1px solid black;
+}
+
+.edit-btn {
+  margin: 5px;
+}
+
+.margin-top-10 {
+  margin-top: 10px;
+}
+
+.margin-top-25 {
+  margin-top: 25px;
+}
+
+.margin-bottom-50 {
+  margin-bottom: 50px;
+}
+
+.margin-bottom-25 {
+  margin-bottom: 25px;
+}
+
+.margin-bottom-10 {
+  margin-bottom: 10px;
+}
+
+.margin-bottom-15 {
+  margin-bottom: 15px;
+}
+
+.margin-bottom-20 {
+  margin-bottom: 20px;
+}
+
+.raised-page {
+  border: 1px solid #ddd;
+  background: white;
+  padding: 25px;
+  margin-top: 25px;
+
+  /* x-offset, bottom-offset, spread, size */
+  box-shadow: 0 8px 25px 2px #a8a094;
+}
+
+.flat-page {
+  background: white;
+  padding: 10px;
+  min-height: 500px;
+
+  h3 {
+    padding: 15px;
+  }
+}
+
+/* hlb-page-btn - a text button with a yello line underneath it */
+.hlb-page-btn {
+  border-bottom: 3px solid $hlb-yellow;
+}
+
+.hlb-page-btn:hover {
+  border-bottom: 3px solid $hlb-blue;
+}
+
+/* hlb-page-header => controls how the page titles look */
+.page-header {
+}

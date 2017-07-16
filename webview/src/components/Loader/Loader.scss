@@ -1,0 +1,20 @@
+/**
+ * Created by Chris Dorward on 24/01/2017
+ * coponents/Loader/Loader
+ */
+
+.loader {
+  > .logo-graphic {
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  > .loader-graphic {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  > .loader-text {
+    font-family: 'Baloo';
+  }
+}

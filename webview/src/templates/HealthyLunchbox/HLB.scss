@@ -1,0 +1,512 @@
+/**
+ * Created by Chris Dorward on 02/02/2017
+ * templates/HealthyLunchbox/HealthyLunchbox.scss
+ */
+
+@import '../../vars.scss';
+
+/**
+ * Amy's Builder CSS
+ */
+
+.healthy-lunch-box {
+}
+
+.recipes-more-btn {
+  color: $hlb-text;
+  margin-left: 25px;
+  border-bottom: 3px solid $hlb-yellow;
+}
+
+.recipes-more-btn:hover {
+  border-bottom: 3px solid $hlb-blue;
+}
+
+.your-tip-text-content h3 {
+  margin-top: 0;
+}
+
+.your-tip-text-content img {
+  height: 25px;
+  margin-right: 10px;
+  float: left;
+}
+
+.your-tip-text-content {
+  margin: 20px 20px 20px 0;
+  padding: 20px 5px 20px 20px;
+  border-left: solid 3px #ffcf00;
+}
+
+.finished-tips {
+  background: #f3f2ec;
+  margin-top: -75px;
+  margin-bottom: 25px;
+
+  h2 {
+    margin-left: 15px;
+  }
+}
+
+.finished-tips-top {
+  padding-top: 35px;
+}
+
+.itemClickable h2 {
+  color: white;
+}
+
+.itemClickable:hover {
+  cursor: pointer;
+  background: #14b2f5;
+}
+
+.builder-screen-1-img {
+  max-height: 75px;
+  display: inline;
+}
+
+.builder-screen-1-img-water {
+  margin-bottom: 10px;
+  display: inline;
+}
+
+.itemSelected {
+  cursor: pointer;
+  background: white;
+}
+
+.builder-2-card-selected {
+  border: 4px solid $hlb-green;
+}
+
+.builder-2-card {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.builder-2-card:hover {
+  border: 4px solid #14b2f5;
+  cursor: pointer;
+}
+
+.serveinfo {
+  background: white;
+  color: $hlb-text;
+}
+
+.dark-text {
+  color: $hlb-text;
+}
+
+.foodgroup-breads-cereals {
+  background-color: #00447e;
+}
+
+.foodgroup-water {
+  background-color: #0480b4;
+}
+
+.foodgroup-vegetables-salads {
+  background-color: #54b948;
+}
+
+.foodgroup-meat-alternatives {
+  background-color: #faa61a;
+}
+
+.foodgroup-dairy {
+  background-color: #747679;
+}
+
+.foodgroup-fruit {
+  background-color: #0096d6;
+}
+
+.builder-screen-1-lunchbox-heading {
+  padding-bottom: 10px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #0096d6;
+  overflow: auto;
+  color: #fff;
+}
+
+.builder-screen-1-lunchbox-title {
+  text-align: center;
+
+  h1 {
+    color: $hlb-white;
+  }
+}
+
+/* Custom */
+@media only screen and (max-width: 540px) {
+  .builder-screen-1-lunchbox-title h1 {
+    font-size: 20px;
+    margin-top: 15px;
+  }
+
+  .builder-screen-1-lunchbox-heading {
+    padding-bottom: 0;
+  }
+}
+
+.blue-circle-button {
+  color: #fff;
+  background-color: #00447e;
+  border-radius: 50%;
+  height: 6em;
+  width: 6em;
+  box-shadow: 0 2px 15px 1px #535454;
+}
+
+.blue-circle-button h4 {
+  line-height: 0.8em;
+  color: #fff;
+}
+
+.blue-circle-button:hover {
+  color: #fff;
+  background-color: #14b2f5;
+  text-decoration: none;
+}
+
+.blue-circle-button:visited {
+  color: #fff;
+  background-color: #00447e;
+  text-decoration: none;
+}
+
+.blue-circle-button:active {
+  color: #fff;
+  background-color: #00447e;
+  text-decoration: none;
+}
+
+.btn:focus,.btn:active {
+  outline: none !important;
+}
+
+.builder-1-start-over-icon {
+  max-width: 20px;
+  display: inline;
+  padding-top: 8px;
+  margin-bottom: -5px;
+}
+
+.builder-1-start-over-button {
+  margin-left: 10px;
+  padding: 10px;
+}
+
+.builder-screen-1 {
+  padding-bottom: 5px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: #0096d6;
+  overflow: auto;
+}
+
+ /*End Updated code for builder heading*/
+
+.builder-screen-1-lunchbox {
+  margin: 20px 20px 0 20px;
+  background-color: #0e7fb2;
+  border: solid 4px #00447e;
+  overflow: auto;
+  overflow-x: hidden;
+  color: #fff;
+}
+
+.builder-screen-1-tile {
+  padding: 30px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.builder-screen-1-tile-center {
+  text-align: center;
+}
+
+
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.builder-1-bottom-dash {
+  border-bottom: dashed 3px #00447e;
+}
+
+.builder-1-top-dash {
+  border-top: dashed 3px #00447e;
+}
+
+.builder-1-left-dash {
+  border-left: dashed 3px #00447e;
+}
+
+.builder-1-right-dash {
+  border-right: dashed 3px #00447e;
+}
+
+.border-1-item-tab {
+  position: absolute;
+  left: 37.5%;
+  width: 25%;
+  height: 15px;
+  background: #00447e;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.border-1-prompt-box {
+  position: relative;
+  width: 40%;
+  height: auto;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  text-align: left;
+  padding: 10px 20px;
+  box-shadow: 0 2px 15px 3px #535454;
+}
+
+.builder-screen-2-header {
+  padding: 0 20px;
+  color: #fff;
+  box-shadow: 0 10px  25px -1px #a8a094;
+}
+
+.builder-screen-2-header-back {
+  /* margin-bottom: inherit;-20px; */
+  cursor: pointer;
+}
+
+.builder-screen-2-header-img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  float: right;
+  max-height: 100px;
+}
+
+.builder-screen-2-header-title {
+  padding-left: 30px;
+
+  h2 {
+    color: white;
+  }
+}
+
+.builder-screen-2-header-text {
+  padding: 15px 10px;
+
+  h4 {
+    color: white;
+  }
+}
+
+.builder-screen-2-extend {
+  text-align: center;
+  border-top: solid 1px #fff;
+  text-transform: uppercase;
+}
+
+.builder-screen-2-extend h4 {
+  margin-top: -5px;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.builder-screen-2-extend a {
+  color: #fff;
+}
+
+.builder-2-card {
+  background: white;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 25px 2px #a8a094;
+  padding-bottom: 5px;
+  text-align: center;
+  margin-left: -5px;
+  margin-right: -5px;
+  min-height: 225px;
+}
+
+.builder-screen-2-cards-title {
+  text-align: center;
+  padding: 10px 0;
+
+}
+
+.builder-2-card-text {
+  margin: 25px;
+}
+
+.builder-screen-2-card-img {
+  display: inline;
+  margin-top: 25px;
+  max-height: 75px;
+}
+
+.builder-screen-2-expand {
+  margin: 10px 10px 40px 0;
+}
+
+.builder-screen-2-top-chart {
+  padding: 15px 30px;
+  margin-top: -1px;
+  padding-bottom: 10px;
+}
+
+.builder-screen-2-top-border {
+  border-top: solid 1px #fff;
+}
+
+.builder-screen-2-expand-title h3 {
+  color: white;
+  margin-left: -15px;
+}
+
+.builder-screen-2-expand-text {
+  padding-top: 20px;
+}
+
+.builder-screen-2-infographics {
+  background-color: #fff;
+  color: #6b6b6b;
+  margin: 0 -20px;
+  padding-bottom: 40px;
+}
+
+.builder-screen-2-infographics-img {
+  float: left;
+  margin-top: 10px;
+}
+
+.builder-screen-2-infographics-expanded {
+  background-color: #fff;
+  color: #6b6b6b;
+  margin: 0 -20px;
+}
+
+.builder-screen-2-infographics-img-expanded {
+  float: left;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.builder-screen-3 {
+  border: 1px solid blue;
+}
+
+.builder-screen-2-chart-link a {
+  float: right;
+  text-decoration: none;
+}
+
+/* ==========  Media Queries for responsiveness  ========== */
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+}
+
+  /* Small Devices, Tablets */
+  @media only screen and (max-width: 768px) {
+ 	 .builder-screen-1-lunchbox h2 {
+ 		 font-size: 20px;
+ 		 margin-top: 10px;
+ 		 text-align: center;
+ 	 }
+
+ 	 .builder-screen-1-tile {
+ 		 padding:10px 5px 10px 5px;
+ 	 }
+
+  .builder-screen-1-img {
+    max-width: 75px;
+  }
+
+  .builder-screen-1-tile-center h2 {
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: 0;
+  }
+
+  .builder-1-row-responsive {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .builder-screen-1-align {
+ 		 margin-left:-10px;
+   }
+  	 .border-1-item-tab {
+ 	  	 height: 10px;
+ }
+
+ 	 .border-1-prompt-box {
+     	 width: 70%;
+ 	 }
+
+ 	 .builder-screen-2-header h2 {
+ 		 font-size: 24px;
+ 		 /*padding-top:15px;*/
+ 	 }
+
+ 	 /*.builder-screen-2-header-title {
+ 		 padding-top: 5px;
+ 	 }*/
+
+  }
+
+  /* Extra Small Devices, Phones */
+  @media only screen and (max-width: 480px) {
+    .card-recipe-item {
+    }
+
+ 	 .builder-screen-1-lunchbox h2 {
+ 		  font-size: 14px;
+ 	 }
+ 	.builder-screen-1-img {
+ 	 	 max-width: 60px;
+  }
+
+
+ 	 .border-1-prompt-box {
+    		width: 70%;
+ 	 }
+ 	 .builder-screen-2-header h2 {
+ 		 font-size: 18px;
+ 		 /* padding-top:15px; */
+ 	 }
+ 	 .builder-screen-2-header h4 {
+ 		 font-size: 16px;
+ 		 margin-top: 0;
+ 		 margin-bottom: 0;
+ 	 }
+
+  .builder-screen-2-header-title p {
+    padding-left: 15px;
+  }
+
+  .builder-screen-2-extend h4 {
+    margin-bottom: 0;
+  }
+
+  }

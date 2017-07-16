@@ -1,0 +1,130 @@
+/**
+ * Created by Chris Dorward on 02/02/2017
+ * coponents/CardRecipeItem/CardRecipeItem
+ */
+
+@import '../../vars.scss';
+
+/**
+ * Actual CardCategory CSS
+ */
+.card-recipe-item {
+  /* border: 1px solid black; */
+  margin-bottom: 30px;
+  box-shadow: 0 8px 25px 2px #a8a094;
+  padding-bottom: 5px;
+  background: $hlb-white;
+}
+
+.card-recipe-item a {
+  color: $hlb-links;
+}
+
+.card-recipe-item a:hover {
+  color: $hlb-links-hover;
+}
+
+.card-recipe-item-icon {
+  padding-right: 5px;
+}
+
+.card-recipe-item-detail {
+  margin: 20px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.card-recipe-item-detail h4 {
+  padding-bottom: 10px;
+  border-bottom: solid 1px #6b6b6b;
+}
+
+.card-recipe-item-detail a {
+  padding-bottom: 2px;
+  border-bottom: solid 2px #faa61a;
+  color: #0096d6;
+}
+
+.card-recipe-item-tab-text {
+  position: relative;
+}
+
+.card-recipe-item-tab-text p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.card-recipe-item-tab-text p span {
+  color: #6b6b6b;
+  background: #fff;
+  padding: 15px 25px 15px 15px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+/* ==========  Media Queries for responsiveness  ========== */
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  .card-recipe-item {
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .card-recipe-item {
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .card-recipe-item {
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .card-recipe-item {
+  }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  .card-recipe-item {
+  }
+}
+
+/* ==========  Non-Mobile First Method  ========== */
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  .card-recipe-item {
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .card-recipe-item {
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .card-recipe-item {
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .card-recipe-item {
+  }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  .card-recipe-item {
+  }
+}

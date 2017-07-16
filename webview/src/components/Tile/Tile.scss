@@ -1,0 +1,46 @@
+/**
+ * Created by Chris Dorward on 21/01/2017
+ * coponents/Tile/Tile.scss
+ */
+@import '../../vars.scss';
+
+.tile {
+  height: 150px;
+  border: none;
+  color: $hlb-white;
+}
+
+.tile-recipe {
+  background: $hlb-orange;
+}
+
+.tile-tip {
+  background: $hlb-yellow;
+}
+
+.tile-title-btn:hover {
+  background: $hlb-white;
+  color: $hlb-black;
+}
+
+.tile-title-btn-recipe {
+  background: $hlb-orange;
+  color: $hlb-white;
+}
+
+.tile-title-btn-tip {
+  background: $hlb-yellow;
+  color: $hlb-white;
+}
+
+.tile-title-btn {
+  border: none;
+  width: 100%;
+  text-align: left;
+  font-family: 'Baloo';
+}
+
+.tile-sub-title {
+  margin-left: 5px;
+  margin-top: 10px;
+}

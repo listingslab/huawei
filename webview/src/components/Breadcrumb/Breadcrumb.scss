@@ -1,0 +1,20 @@
+/**
+ * Created by Chris Dorward on 04/02/2017
+ * coponents/Breadcrumb/Breadcrumb
+ */
+
+@import '../../vars.scss';
+
+.hlb-breadcrumb {
+  /* border: 1px solid $hlb-blue; */
+  margin-top: 15px;
+}
+
+.hlb-breadcrumb a {
+  color: $hlb-breadcrumb;
+  font-family: 'Baloo';
+}
+
+.hlb-breadcrumb a:hover {
+  color: $hlb-links-hover;
+}

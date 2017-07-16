@@ -1,0 +1,192 @@
+/**
+ * Created by Chris Dorward on 12/02/2017
+ * coponents/HealthySwap/HealthySwap
+ */
+
+@import '../../vars.scss';
+
+/**
+ * Amy's CSS
+ */
+
+.swap-wrap {
+  margin-bottom: 10px;
+}
+
+.swap-item {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.swap-content {
+  margin: 20px 20px 20px 0;
+  padding: 20px 5px 20px 20px;
+  border-left: solid 3px #ffcf00;
+}
+
+.swap-content h3 {
+  margin-top: 0;
+}
+
+
+.swap-content a {
+  border-bottom: solid 2px #faa61a;
+  color: #0096D6;
+}
+
+
+.swap-header-banner{
+  background-color: #FAA61A;
+  margin-left:0;
+  margin-right:0;
+  margin-bottom: -1px;
+}
+
+
+.swap-header-arrows-row {
+  margin-bottom: 50px;
+}
+
+
+.swap-header-banner-arrow {
+  max-height:10px;
+
+}
+
+
+.swap-header-banner-arrow:after {
+   content:'';
+   position: absolute;
+   top: 100%;
+   left: 50%;
+   margin-left: -20px;
+   width: 0;
+   height: 0;
+   border-top: solid 20px #FAA61A;
+   border-left: solid 20px transparent;
+   border-right: solid 20px transparent;
+}
+
+
+.swap-header-text {
+ color: #ffffff;
+}
+
+
+.swap-header-text h2 {
+  padding:30px 40px 30px 10px;
+  color: #fff;
+}
+
+.swap-image-overlay {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.swap-image-overlay-small img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+
+/*USED IN OTHER CSS FILES ALREADY*/
+
+.row-eq-height {
+ display: -webkit-box;
+ display: -webkit-flex;
+ display: -ms-flexbox;
+ display: flex;
+}
+
+
+/* ==========  Media Queries for responsiveness  ========== */
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+
+.swap-header-text h2 {
+ padding:30px 40px 30px 30px  ;
+}
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+
+.swap-header-text h2 {
+ padding:20px 20px 25px 20px;
+}
+
+
+.swap-image-overlay {
+   padding-bottom:20px;
+   padding-left:20px;
+}
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+
+.swap-img {
+ max-height: 250px;
+ overflow: hidden;
+}
+
+
+.swap-img img {
+ width: 100%;
+}
+
+
+.swap-item {
+ margin-left:-10px;
+ margin-right: -10px;
+  }
+
+
+.swap-header-text h2 {
+ text-align: center;
+}
+
+
+.swap-header-arrows-row {
+  margin-bottom: 40px;
+}
+
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+
+.swap-content h3 {
+  font-size: 20px;
+}
+
+
+.swap-content {
+  margin: 10px 10px 20px 0;
+  padding: 0 0 0 10px;
+  border-left: solid 3px #ffcf00;
+}
+
+
+.swap-img {
+ max-height: 150px;
+}
+
+.swap-header-text h2 {
+ font-size: 24px;
+ padding: 5px 5px 20px 5px;
+}
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+
+}

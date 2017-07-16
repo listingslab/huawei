@@ -1,0 +1,21 @@
+/**
+ * Created by Chris Dorward on 31/01/2017
+ * templates/Recipes/Recipes.scss
+ */
+
+@import '../../vars.scss';
+
+.recipe {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.recipe-btn {
+  width: 100%;
+  text-align: left;
+  height: 100px;
+
+  > h3 {
+    color: white;
+  }
+}

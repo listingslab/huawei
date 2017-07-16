@@ -1,0 +1,75 @@
+/**
+ * Created by Chris Dorward on 10/02/2017
+ * coponents/CardText/CardText
+ */
+
+@import '../../vars.scss';
+
+/**
+ * Actual CardText CSS
+ */
+
+.card-img-text-item {
+  padding-bottom: 5px;
+  background: white;
+}
+
+.card-img-text-content {
+  margin: 20px 20px 20px 0;
+  padding: 20px 5px 20px 20px;
+  border-left: solid 3px #ffcf00;
+}
+
+.card-img-text-content h3 {
+  margin-top: 0;
+}
+
+.card-img-text-content a {
+  border-bottom: solid 2px #faa61a;
+  color: #0096d6;
+  font-weight: 700;
+}
+
+/* ==========  Media Queries for responsiveness  ========== */
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+}
+
+/* ==========  Non-Mobile First Method  ========== */
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+}

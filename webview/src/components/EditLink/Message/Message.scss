@@ -1,0 +1,23 @@
+/**
+ * Created by Chris Dorward on 21/01/2017
+ * coponents/Message/Message.scss
+ */
+@import '../../vars.scss';
+
+#message {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  width: 275px;
+  z-index: 10000;
+}
+
+.message-btn {
+  margin: 3px;
+  width: 100%;
+  text-align: left;
+
+  > span {
+    margin-right: 10px;
+  }
+}

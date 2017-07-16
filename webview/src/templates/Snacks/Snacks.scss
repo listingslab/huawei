@@ -1,0 +1,46 @@
+/**
+ * Created by Chris Dorward on 31/01/2017
+ * coponents/CardCategory/CardCategory
+ */
+
+@import '../../vars.scss';
+
+.slider-pane {
+  background: white;
+  height: 250px;
+
+  /* x-offset, bottom-offset, spread, size */
+  /* box-shadow: 0 8px 25px 2px #a8a094; */
+}
+
+/* ==========  Non-Mobile First Method  ========== */
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  .card-category {
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .card-category {
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .card-category {
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .card-category {
+  }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  .card-category {
+  }
+}
