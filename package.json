@@ -1,0 +1,30 @@
+{
+  "name": "kangaroo-cart",
+  "version": "0.1.0",
+  "description": "React Native Mobile App development environment to publish a PWA to iOS and Android",
+  "author": "chris.dorward",
+  "main": "./src/Main.js",
+  "scripts": {
+    "start": "clear && echo \"burb...\"",
+    "docker": "docker -version",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:aligent/kangaroo.git"
+  },
+  "keywords": [
+    "ES6",
+    "iOS",
+    "Android",
+    "React Navive",
+    "Expo"
+  ],
+  "license": "OSL-3.0",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "dependencies": {
+    "react": "^15.6.1"
+  }
+}
